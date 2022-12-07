@@ -1,0 +1,133 @@
+---
+layout: default
+title: Supply Chain Optimization
+subtitle: Strategic and operational planning based on our proprietary methodology.
+meta_title: 'Supply Chain Optimization'
+meta_description: 'Our supply chain solutions driven by AI algorithms perfected for different retail formats like multi-format, grocery, apparel among others.'
+body_classes: page-services-list
+redirect_from:
+  - /solutions/supply-chain-optimization  
+  - /retail/customer-data-platform/
+---
+
+<!--start banner section-->
+<div
+  style="position: absolute; filter: brightness(0.5); background-image: url(/assets/images/sco-header.png); width: 100%; height: 530px;">
+</div>
+<div class="container pb-6 cdp-head">
+  {% include about_sco.html %}
+</div>
+<!--end banner section-->
+<div class="navbar_wrap">
+  <div class="navbar-cdp">
+    <ul class="navbar-sco-ul">
+      <!-- <li onclick="scrollToTop('whatwedo')"> What we do</li> -->
+      <li onclick="scrollToTop('work')" style="width: 33.3%;"> Solutions</li>
+      <li onclick="scrollToTop('case-study')" style="width: 33.3%;">Case Study</li>
+      <li onclick="scrollToTop('retail-blog')" style="width: 33.3%;">Blog</li>
+    </ul>
+  </div>
+</div>
+
+<!-- start section 1 -->
+<div class="strip strip-grey pt-6 pb-10 splash splash-one">
+  <div class="container">
+    <div class="row" style="margin-top: 1px;">
+      <div class="col-12 {% if site.params.homepage.splash_one_image %}col-md-6{% else %}col-md-12{% endif %}"
+        style="margin-top:0px" data-aos="fade-up">
+        <!-- <h2>More Than 1000+<br>Stores Are Powered <br> by Us.</h2> -->
+        <h3 style="font-weight: 800; font-size: 25px; padding-bottom: 14px;">Ask Yourself</h3>
+        <ul
+          style="list-style-type: disc; list-style-position: outside; font-size: 19px; padding-left: 20px;">
+          <li style="padding-bottom: 20px;"> Is your demand planning based on intuition and on a multitude of
+            excel spreadsheets with
+            thousands
+            of data points? </li>
+          <li style="padding-bottom: 20px;"> Is it a manual process which takes ages to complete and build
+            consensus? </li>
+          <li style="padding-bottom: 20px;"> Different teams have different sets of data that they rely on as
+            the source of truth?</li>
+          <li style="padding-bottom: 20px;"> Does capital tied up in inventory worry you?</li>
+          <li style="padding-bottom: 20px;">  Are stock outs eating into your profits?</li>
+          <li style="padding-bottom: 20px;"> Is a significant portion your inventory occupying shelf space
+            without getting sold?</li>
+        </ul>
+
+        <div class="sco-answer">
+          <br>
+            <b>If you answered yes to any of the questions above you can benefit from AI driven supply chain
+                optimization. </b>
+          <br>
+          <p style="padding-top: 20px;">
+              BluePi’s proprietary methodology of Demand Planning would add a minimum 5% to your bottom-line
+              by
+              finding the right amount of inventory to carry to ensure both stock outs and Excess Inventory is
+              minimized. Our supply chain solutions driven by AI algorithms perfected for different retail
+              formats like multi-format, grocery, apparel among others
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 " data-aos="fade-right">
+        {% picture "{{relative_url}}/assets/images/retail_store.png" --alt retailstore %}
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- end start section 1 -->
+
+
+<!--start cdp-work section-->
+<div class="strip strip-white" id="work">
+  <div class="intro intro-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" data-aos="fade-up">
+          <h3 class="text-center mb-3" style="text-transform: uppercase; letter-spacing: 4px;">Some of our impactful
+            work
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-6">
+    <div class="row">
+      {% for supplychain in site.supplychain %}
+      <div class="col-12 col-md-6 mb-3" data-aos="fade-up">
+        <div class="service service-summary radius" style="align-items: center;
+      background: #f5f5f5;">
+          {% if supplychain.icon %}
+          <div class="service-image">
+            <img src="{{supplychain.icon | relative_url}}" />
+          </div>
+          {% endif %}
+          <div class="service-title" style="font-size: 20px; text-align: center;">
+            <h2>{{ supplychain.title }}</h2>
+          </div>
+          <div class="service-description" style="text-align: justify;">
+            <p>{{ supplychain.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!--end cdp-work section-->
+
+<!-- case-study section -->
+{% include sco-case-study.html %}
+
+<!-- blog section -->
+{% include sco-blog.html %}
+
+<!-- contact-info section -->
+{% include contact-cta.html
+  heading=site.params.contact_cta.heading
+  subheading=site.params.contact_cta.subheading
+  button_url=site.params.contact_cta.button_url
+  button_text=site.params.contact_cta.button_text
+%}
+

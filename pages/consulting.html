@@ -1,0 +1,114 @@
+---
+layout: default
+title: Cloud Consulting
+subtitle: Optmize cost, improve efficiency and future proof your cloud deployment
+meta_description: Optimize cost, improve efficiency, and future proof cloud deployment
+body_classes: page-services-list
+---
+
+<!--start banner section-->
+<div
+  style="position: absolute; filter: brightness(0.8); background-image: url(/assets/images/cloud_consulting.png); width: 100%; height: 550px; background-size: cover;">
+</div>
+<div class="container pb-6 cdp-head">
+  {% include about_consulting.html %}
+</div>
+<!--end banner section-->
+<div class="navbar_wrap" style="margin-top: 0px;">
+  <div class="navbar-cdp">
+    <ul class="navbar-sco-ul">
+      <!-- <li onclick="scrollToTop('whatwedo')"> What we do</li> -->
+      <li onclick="scrollToTop('work')" style="width: 33.3%;"> Solutions</li>
+      <li onclick="scrollToTop('case-study')" style="width: 33.3%;">Case Study</li>
+      <li onclick="scrollToTop('retail-blog')" style="width: 33.3%;">Blog</li>
+    </ul>
+  </div>
+</div>
+
+<!-- start section 1 -->
+<div class="strip strip-grey pt-6 pb-10 splash splash-one">
+  <div class="container">
+    <div class="row" style="margin-top: 1px;">
+      <div class="col-12 {% if site.params.homepage.splash_one_image %}col-md-6{% else %}col-md-12{% endif %}"
+        style="margin-top: 7vw" data-aos="fade-up">
+        <!-- <h2>More Than 1000+<br>Stores Are Powered <br> by Us.</h2> -->
+        <h3 style="font-weight: 800; font-size: 25px; padding-bottom: 14px;">
+          Optmize cost, improve efficiency and future proof your cloud deployment
+        </h3>
+        <div style="font-size: 19px; text-align: justify;">
+            <p>
+              Moving to cloud is not a question of “if”, but rather “when” and “how”. Depending on your own
+              journey on cloud, whether you are mulling the “when” or whether you have already started, it helps
+              to have experts with experience, on your side. At BluePi we have helped many organisations move to
+              cloud, to optimise their cloud infrastructure and to evaluate new services and to get ready for new
+              design paradigms. Let us help you define your cloud strategy, so that you can avail sustained
+              benefits for your business.
+            </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 " data-aos="fade-right">
+        {% picture "{{relative_url}}/assets/images/consulting_hero.png" --alt Migration %}
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- end start section 1 -->
+
+
+<!--start cdp-work section-->
+<div class="strip strip-white" id="work">
+  <div class="intro intro-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" data-aos="fade-up">
+          <h3 class="text-center mb-3" style="text-transform: uppercase; letter-spacing: 4px;">Some of our impactful
+            work
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" style="justify-content: center;">
+      {% for consulting in site.consulting %}
+      <div class="col-12 col-md-6 mb-3" data-aos="fade-up">
+        <div class="service service-summary radius" style="align-items: center;
+      background: #f5f5f5;">
+          {% if consulting.icon %}
+          <div class="service-image">
+            <img src="{{consulting.icon | relative_url}}" />
+          </div>
+          {% endif %}
+          <div class="service-title" style="font-size: 20px; text-align: center;">
+            <h2>{{ consulting.title }}</h2>
+          </div>
+          <div class="service-description" style="color: #4d606d; font-size: 19px;">
+            <p>{{ consulting.description }}</p>
+          </div>
+          <div class="service-content" style="color: #4d606d; font-size: 19px; text-align: justify;">
+            {{ consulting.content }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!--end cdp-work section-->
+
+<!-- case-study section -->
+{% include case-study.html %}
+
+<!-- blog section -->
+{% include retail-blog.html %}
+
+<!-- contact-info section -->
+{% include contact-cta.html
+  heading=site.params.contact_cta.heading
+  subheading=site.params.contact_cta.subheading
+  button_url=site.params.contact_cta.button_url
+  button_text=site.params.contact_cta.button_text
+%}

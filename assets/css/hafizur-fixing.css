@@ -1,0 +1,30 @@
+.team-block-three .inner-box .lower-content .content {
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+.team-block-three .inner-box .image {overflow: visible!important;}
+
+.team-block-three .inner-box:hover .image img {transform: scale(1)!important;
+    opacity: 1!important;}
+.testimonial-section-three .owl-theme .owl-dots .owl-dot span {display: none;}
+
+.news-block .inner-box:hover .lower-content .post-info li a {
+    /* color: #fff; */
+}
+.subscribe-section {background-color: #09053b;}
+
+.fact-counter .column .inner .content {background: transparent;text-align: left; height: auto}
+
+section.style-four.main-slider .owl-dots {display: none;}
+
+.style-four.main-slider .owl-nav span {display: none;}
+
+
+.blog-details-content .blog-post .image-box img {
+    width: 100%;
+}
+.news-block-one .inner-box .image img {
+    width: 100%;
+}

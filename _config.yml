@@ -1,0 +1,289 @@
+baseurl: ''
+exclude: ['README.md']
+permalink: pretty
+title: 'BluePi'
+collections_dir: collections
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compact # possible values: nested expanded compact compressed
+
+collections:
+  services:
+    output: true
+    permalink: /:collection/:path/
+  whitepaper:
+    output: true
+    permalink: /:collection/:path/
+  team:
+    output: true
+    permalink: /:collection/:path/  
+  posts:
+    output: true
+    permalink: /blog/:path/
+  cloud:
+    output: true
+    permalink: /:collection/:path/
+  dataservice:
+    output: true
+    permalink: /:collection/:path/
+  case-study:
+    output: true
+    permalink: /case-study/:path/
+  testimonials:
+    output: true
+    permalink: /:collection/:path/
+  retailwiki:
+    output: true
+    permalink: /:collection/:path/
+  supplychain:
+    output: true
+    permalink: /:collection/:path/
+  cdp:
+    output: true
+    permalink: /:collection/:path/
+  retailanalytics:
+    output: true
+    permalink: /:collection/:path/
+  bigdata:
+    output: true
+    permalink: /:collection/:path/
+  datascience:
+    output: true
+    permalink: /:collection/:path/
+  migration:
+    output: true
+    permalink: /:collection/:path/
+  devops:
+    output: true
+    permalink: /:collection/:path/
+  consulting:
+    output: true
+    permalink: /:collection/:path/
+  career:
+    output: true
+    permalink: /:collection/:path/
+  modernisation:
+    output: true
+    permalink: /:collection/:path/
+  bfsi:
+    output: true
+    permalink: /:collection/:path/
+  bfsi-aiml:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      type: services
+    values:
+      layout: service
+  - scope:
+      type: whitepaper
+    values:
+      layout: work
+  - scope:
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: 'images'
+    values:
+      image: true
+  - scope:
+      path: 'pages'
+    values:
+      permalink: /:basename/
+  - scope:
+      type: cloud
+    values:
+      layout: service
+  - scope:
+      type: dataservice
+    values:
+      layout: service
+  - scope:
+      type: supplychain
+    values:
+      layout: service
+  - scope:
+      type: cdp
+    values:
+      layout: service
+  - scope:
+      type: retailanalytics
+    values:
+      layout: service
+  - scope:
+      type: bigdata
+    values:
+      layout: service
+  - scope:
+      type: datascience
+    values:
+      layout: service
+  - scope:
+      type: migration
+    values:
+      layout: service
+  - scope:
+      type: devops
+    values:
+      layout: service
+  - scope:
+      type: consulting
+    values:
+      layout: service
+  - scope:
+      type: retailwiki
+    values:
+      layout: retailwiki
+  - scope:
+      type: career
+    values:
+      layout: work
+  - scope:
+      type: modernisation
+    values:
+      layout: service
+  - scope:
+      type: bfsi
+    values:
+      layout: service
+  - scope:
+      type: bfsi-aiml
+    values:
+      layout: service
+
+params:
+  google_analytics_id: 'UA-90744523-6'
+  global:
+    header_fixed: true
+  footer:
+    show_menu_footer_primary: true
+    show_menu_footer_secondary: true
+    show_menu_footer_third: true
+    show_menu_footer_fourth: true
+    show_services_links: true
+    show_work_links: true
+  homepage:
+    show_services_section: true
+    services_count: 6
+    show_splash_section_one: true
+    splash_one_image: assets/images/retail.png 
+    splash_one_heading: In retail industry average accuracy of inventory is 63%..How accurate is yours?
+    splash_one_paragraph:
+    splash_one_link_url: /retail/supply-chain-optimization
+    splash_one_link_text: Know more
+    show_partners: true
+    show_aboutus: true 
+    show_work_section: true
+    work_section_heading: Explore Our Whitepapers
+    work_count: 2
+    show_view_all_work_button: true
+  services:
+    show_features: true
+    show_splash_one_section: true
+    splash_one_background_image: assets/images/kaleidico-754543-unsplash.png
+    splash_one_heading: We Power The Data That Drive Your Business
+    splash_one_paragraph:
+      We work with retailers in providing retail optimization solutions that are tailor-made 
+      keeping their specific supply chain nuances. Whether you are a multi-format retail chain, 
+      apparels or a grocery store our AI/ML driven solutions will add to your bottom-line and 
+      top line while at the same time improving customer satisfaction.
+  contact_cta:
+    heading: Ready to get started?
+    subheading: Call us - +919319029977
+    button_url: contact-us
+    button_text: Contact us
+
+url: "https://www.bluepiit.com"
+plugins:
+  - jekyll-environment-variables
+  - jekyll_picture_tag
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-paginate-v2
+
+
+feed:
+  collections:
+    posts:
+      path: "/index.xml"
+
+jekyll-archives:
+  enabled: all
+  layout: category
+  permalinks:
+    category: '/blog/category/:name/'
+    tag: '/blog/tag/:name/'
+    year: '/blog/:year/'
+    month: '/blog/:year/:month/'
+    day: '/blog/:year/:month/:day/'
+
+picture:
+  ignore_missing_images: true
+  suppress_warnings: true
+  
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+pagination:
+  
+  # Site-wide kill switch, disabled here it doesn't run at all 
+  enabled: true
+
+  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
+  debug: false
+
+  # The default document collection to paginate if nothing is specified ('posts' is default)
+  collection: 'posts'
+
+  # How many objects per paginated page, used to be `paginate` (default: 0, means all)
+  per_page: 6
+
+  # The permalink structure for the paginated pages (this can be any level deep)
+  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  #permalink: '/page/:num.html' # Pages are simple html files 
+  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+
+  # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
+  title: ':title - page :num'
+
+  # Limit how many pagenated pages to create (default: 0, means all)
+  limit: 0
+  
+  # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
+  sort_field: 'date'
+
+  # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
+  sort_reverse: true
+
+  # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
+  category: 'posts'
+
+  # Optional, the default tag to use, omit to disable
+  tag: ''
+
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  locale: '' 
+
+ # Optional,omit or set both before and after to zero to disable. 
+ # Controls how the pagination trail for the paginated pages look like. 
+  trail: 
+    before: 2
+    after: 2
+
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: 'index'
+
+############################################################

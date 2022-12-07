@@ -1,0 +1,246 @@
+---
+layout: default
+title: Get In Touch
+body_classes: page-contact
+meta_description: We Power The Data That Drive Your Business
+
+---
+
+<style>
+  h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+  }
+
+  /* ///// inputs /////*/
+
+  input:focus~label,
+  textarea:focus~label,
+  input:valid~label,
+  textarea:valid~label {
+    font-size: 0.75em;
+    color: #444442;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+  }
+
+  .styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .styled-input {
+      width: 100%;
+    }
+  }
+
+  .styled-input label {
+    color: rgb(192, 192, 192);
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+  }
+
+  .styled-input.wide {
+    width: 650px;
+    max-width: 100%;
+  }
+
+  .styled-input input,
+  textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: rgb(43, 42, 42);
+    border-radius: 4px;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 0;
+  }
+
+  input:focus~span,
+  textarea:focus~span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 15em;
+  }
+
+  .input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+  }
+
+  .submit-btn {
+    /* float: left; */
+    padding: 23px 62px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #4b8cfb;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
+      0 2px 10px 0 rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+
+  .submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+      0 1px 1px 0 rgba(0, 0, 0, 0.09);
+  }
+
+  @media (max-width: 768px) {
+    .submit-btn {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    .styled-input.wide {
+      width: 100% !important;
+      max-width: 100%;
+    }
+  }
+
+  input[type=checkbox]+label {
+    color: #ccc;
+    font-style: italic;
+  }
+
+  input[type=checkbox]:checked+label {
+    color: #f00;
+    font-style: normal;
+  }
+</style>
+<div class="intro intro-big pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ page.title }}</h1>
+        <!-- <h3><b>Call :</b> +919319029977 (Gururgram, India) | +61 492 991 894 (Australia)<b>Email :</b> enquiry@bluepi.in</h3> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip strip-grey">
+  <div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+    <div class="row">
+      <div class="col-12">
+        <form name="contact" method="POST" Content-Type="x-www-form-urlencoded" data-netlify="true"
+          netlify-honeypot="bot-field">
+          <p style="display:none;">
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          <div class="container">
+            <div class="row input-container">
+              <div class="col-md-12">
+                <h2>We love to hear from you. </h2>
+                <h3>Our team would be happy to answer your questions.</h3>
+              </div>
+              <div class="col-md-12">
+                <div class="styled-input wide">
+                  <input type="text" name="leadname" required />
+                  <label>Name</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="styled-input wide">
+                  <input type="email" name="leademail" required />
+                  <label>Email</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="styled-input wide">
+                  <input type="tel" name="leadphone" required />
+                  <label>Phone Number</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="styled-input wide">
+                  <textarea name="leadmessage" required></textarea>
+                  <label>Message</label>
+                </div>
+              </div>
+              <div class="col-md-12" data-netlify-recaptcha="true"></div>
+              <div class="col-md-12">
+                <button type="submit" class="btn-lrg submit-btn"> Send Message</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="intro py-5">
+  <div class="container">
+    <h2>Connect with us</h2>
+    <div class="row mt-2">
+        
+        <div class="col-12 col-md-6">
+          <div class="mb-2"><b>INDIA Office </b></div>
+          <div class="d-inline-flex mb-1">
+            <div class="mr-2"><i class="fa fa-map-marker"></i></div>
+            <div style="max-width: 400px;">Unit Nos : 713 to 718, 7th Floor EROS CITY SQUARE,
+              Sector 49, Gurugram,
+              Haryana 122018
+            </div>
+          </div>
+          <div class="mb-2">
+            <i class="fa fa-phone mr-1"></i>
+            <span>+91 93 1902 9977 </span>
+          </div>
+          <div class="mb-2">
+            <i class="fa fa-envelope mr-1"></i>
+            <span> enquiry@bluepi.in</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="mb-2"><b> AUSTRALIA Office </b></div>
+          <div class="d-inline-flex mb-1">
+            <div class="mr-2"><i class="fa fa-map-marker"></i></div>
+            <div style="max-width: 400px;">BluePi ANZ Pty Ltd
+              Level 35, International Tower One,
+              100 Barangaroo Avenue,
+              Sydney, NSW - 2000 
+              Australia</div>
+          </div>
+          <div class="mb-2">
+            <i class="fa fa-phone mr-1"></i>
+            <span>+61 492 991 894  </span>
+          </div>
+          <div class="mb-2">
+            <i class="fa fa-envelope mr-1"></i>
+            <span>enquiry@bluepi.com.au</span>
+          </div>
+        </div>
+   
+    </div>
+  </div>
+</div>

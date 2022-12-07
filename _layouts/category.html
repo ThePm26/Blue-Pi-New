@@ -1,0 +1,48 @@
+---
+layout: default
+body_classes: page-services-single
+---
+
+<div class="intro intro-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="padding-top: 30px; padding-bottom: 30px;">
+        <h1>Blog {{ page.type }}</h1>
+        <p>{{ page.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <h1 style="color: rgb(134, 134, 134);">{{ page.title | upcase }}</h1>
+      <ul class="posts">
+        {% for post in page.posts %}
+        <div class="post post-summary mb-4">
+          <div class="post-title">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          </div>
+          <div class="post-meta">
+            {% if post.author %}
+            {% include post-author.html author=post.author %}
+            {% endif %}
+            {% if post.author %}
+            <span class="on">-</span>
+            {% endif %}
+            {{ post.date | date_to_long_string }}
+          </div>
+          <div class="post-description">
+            <p>{{ post.description }}</p>
+          </div>
+          <div class="post-content">
+            <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+          </div>
+          <div class="post-link"><a class="post-read-more" href="{{ post.url | relative_url }}">Read More<i class="fas fa-long-arrow-alt-right ml-1"></i></a></div>
+        </div>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

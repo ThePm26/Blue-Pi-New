@@ -1,0 +1,66 @@
+---
+layout: default
+title: "Meet the Leadership"
+subtitle:
+meta_description: We help our clients make quick decisions that are backed by data and not just by good business sense or intuition.
+body_classes: page-team-list
+---
+<!--start leadership section -->
+<div class="strip-primary-gradient">
+  <div class="intro intro-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1></h1>
+          <p>{{ page.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pb-6"> {% include about_team.html %}</div>
+  <div class="container pb-6" style="padding-top: 38px;">
+    <div class="row">
+      {% for team in site.team %}
+      <div class="col-12 col-md-6 mb-3 mb-md-3 aos-init" data-aos="fade-up">
+        <div class="team team-summary leadership">
+          {% if team.image %}
+          <div class="leadership-image">
+            <img alt="{{ team.title }} logo" class="img-fluid mb-2" src="{{ team.image | relative_url}}" />
+          </div>
+          {% endif %}
+          <div class="team-block">
+            <div class="team-meta">
+              <h2 class="team-name">{{ team.title }}</h2>
+              <div class="team-jobtitle">{{ team.jobtitle }}</div>
+              <div class="team-links">
+                {% if team.linkedin_url %}
+                <a class="team-linkedin" target="_blank" href="{{ team.linkedin_url }}">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                {% endif %}
+                {% if team.twitter_url %}
+                <a class="team-linkedin" target="_blank" href="{{ team.twitter_url }}">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+                {% endif %}
+                {% if team.dribble_url %}
+                <a class="team-linkedin" target="_blank" href="{{ team.dribble_url }}">
+                  <i class="fab fa-dribbble-square"></i>
+                </a>
+                {% endif %}
+                {% if team.behance_url %}
+                <a class="team-linkedin" target="_blank" href="{{ team.behance_url }}">
+                  <i class="fab fa-behance-square"></i>
+                </a>
+                {% endif %}
+              </div>
+            </div>
+            <div class="team-content leadership-content">{{ team.content }}</div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!--end leadership section -->

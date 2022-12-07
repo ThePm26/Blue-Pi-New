@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <link rel="icon" href="{{site.baseurl}}/favicon.png">
+  <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="{{site.baseurl}}/assets/js/libs/jquery-3.3.1.min.js"></script>
+  <style>ul#results-container li a {color:#4a4949; padding-bottom: 10px; display: block; border-bottom: 1px solid #ebeaea;}</style>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90744523-4"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-90744523-4');  
+  </script>
+
+  {% seo %}
+  
+  {% if page.meta_description %}
+  <meta name="description" content="{{ page.meta_description }}" />{% endif %}
+  {% if page.meta_og_title %}
+  <meta property="og:title" content="{{ page.meta_og_title }}" />{% endif %}
+  {% if page.meta_og_type %}
+  <meta property="og:type" content="{{ page.meta_og_type }}" />{% endif %}
+  {% if page.meta_og_url %}
+  <meta property="og:url" content="{{ page.meta_og_url }}" />{% endif %}
+  {% if page.meta_og_image %}
+  <meta property="og:image" content="{{ page.meta_og_image }}" />{% endif %}
+  {% if page.meta_og_description %}
+  <meta property="og:description" content="{{ page.meta_og_description }}" />{% endif %}
+  {% if page.meta_twitter_card %}
+  <meta name="twitter:card" content="{{ page.meta_twitter_card }}" />{% endif %}
+  {% if page.meta_twitter_site %}
+  <meta name="twitter:site" content="{{ page.meta_twitter_site }}" />{% endif %}
+  {% if page.meta_twitter_creator %}
+  <meta name="twitter:creator" content="{{ page.meta_twitter_creator }}" />{% endif %}
+</head>
+
+<body class='page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}'>
+  {% include main-menu-mobile.html %}
+  <div id="header" class='header {% if site.params.global.header_fixed %}header-fixed{% endif %} {{ page.header_classes }}'>
+    {% include header.html %}
+  </div>
+  <div id="wrapper" class="wrapper">
+    {{content}}
+  </div>
+
+
+  {% include footer-third.html %}
+
+
+  <script type="text/javascript" src="{{site.baseurl}}/assets/js/scripts.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/assets/js/header.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/assets/js/hamburger.js"></script>
+
+  {% include google-analytics.html %}
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

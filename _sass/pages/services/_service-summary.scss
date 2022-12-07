@@ -1,0 +1,54 @@
+.service-summary {
+  display: flex;
+  flex-direction: column;
+  @include whitebox();
+  padding: 50px;
+  border: none;
+  height: 100%;
+  .service-image {
+    width: 60px;
+    margin-bottom: 10px;
+    img {
+      max-width: 75px;
+      height: auto;
+    }
+  }
+  .service-title {
+    font-family: $font-family-heading;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .service-description {
+    font-size: 1.1rem;
+  }
+  .service-link {
+    flex: 0;
+    margin-top: auto;
+  }
+  a.service-read-more {
+    font-weight: 400;
+    font-family: $font-family-heading;
+    text-decoration: none;
+  }
+  .quote-text {
+    font-size: 1rem;
+  }
+}
+.radius {
+  border-radius: 15px;
+}
+
+.box-gradient{
+background: linear-gradient(150deg, rgba(30,186,159,1) 0%, rgba(30,186,159,1) 35%, rgba(12,185,245,1) 100%);
+}
+
+.service-para{
+  font-family: $font-family-heading;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  p{
+    color: white;
+  }
+}

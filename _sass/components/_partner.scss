@@ -1,0 +1,21 @@
+.partners {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  img {
+    height: auto;
+    width: 68%;
+  }
+  .partner {
+    flex: auto;
+    margin-bottom: 20px;
+    margin: 0 20px 15px 20px;
+  }
+  .h2 {
+  color: darkgrey;  
+
+  }  
+}

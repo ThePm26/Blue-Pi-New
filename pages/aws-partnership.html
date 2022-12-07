@@ -1,0 +1,134 @@
+---
+layout: default
+title: AWS Premier Partner
+subtitle: In association with AWS, BluePi delivered some of the largest migrations in India, since the launch of India data centers.
+meta_title: 'Partners'
+meta_description: 'In our association with AWS we have delivered some of the largest migrations in India, since the launch of India data centers.'
+body_classes: page-services-list
+---
+
+<style>
+</style>
+<div class="intro intro-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--start media coverage -->
+<div class="container pb-6">
+  {% include about_aws.html %}
+  <div class="row">
+    <div class="col-12 col-md-6 mb-3">
+      <div class="service service-summary">
+        <div class="service-image">
+          <img src="/assets/images/data.png" />
+        </div>
+        <div class="service-title">
+          <h2>Big Data competency:</h2>
+        </div>
+        <div class="quote-text">
+          <P>BluePi has proven track record in developing, implementing and deploying 
+            big data solutions on AWS. Our specialities include clickstream data, 
+            BI, data warehouse, data lakes, data marts, machine learning and AI 
+            workloads. We are focused on helping our clients achieve their business 
+            objectives by leveraging the power of Big data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <div class="service service-summary">
+        <div class="service-image">
+          <img src="/assets/images/migration.png" />
+        </div>
+        <div class="service-title">
+          <h2>Migration competency:</h2>
+        </div>
+        <div class="quote-text">
+          <P>Right from helping you migrate to cloud, building awesome applications, 
+            tools, and services on top of it, building a cloud disaster recovery 
+            (Cloud DR) infrastructure, optimizing your infrastructure, its overall 
+            performance and the total cost of ownership; BluePi does it all. It all 
+            starts with experts evaluating the readiness, creating migration plan 
+            and finally migrating step by step.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 mb-3">
+      <div class="service service-summary">
+        <div class="service-image">
+          <img src="/assets/images/devops.png" />
+        </div>
+        <div class="service-title">
+          <h2>DevOps competency:</h2>
+        </div>
+        <div class="quote-text">
+          <P>DevOps is development, operations and testing functions working in perfect 
+            synchronized symphony. The key goal is to increase speed to market and 
+            safeguard mission critical workloads, at the same time decreasing errors 
+            and increasing continuous uptime. BluePi helps your implement the most 
+            efficient DevOps pipelines and also makes sure that all the best practices are followed.</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+<!--end media coverage-->
+{% if site.data.features.size > 0 and site.params.services.show_features %}
+<div class="strip strip-grey">
+  <div class="container pt-5 pb-5">
+    <div class="row justify-content-center">
+      {% for feature in site.data.features %}
+      <div class="col-12 col-sm-4 col-md-4 mb-2">
+        <div class="feature"><a href="{{feature.url}}">
+            {% if feature.image %}
+            <div class="feature-image">
+              <img alt="{{ feature.title }} logo" src="{{ feature.image | relative_url}}" />
+            </div>
+            {% endif %}
+            <h2 class="feature-title">{{ feature.title }}</h2></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Splash One -->
+{% if site.params.services.show_splash_one_section %}
+<div class="strip strip-bg-primary strip-bg-cover"
+  style="background-image: url('{{ site.params.services.splash_one_background_image | relative_url }}');">
+  <svg aria-hidden="true" role="presentation" viewBox="0 0 100 5">
+    <polygon class="svg-grey" points="0,0 100,0 100,5" />
+  </svg>
+  <div class="container pt-10 pb-10">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        {% if site.params.services.splash_one_heading %}<h2 class="text-white text-capitalize">{{
+          site.params.services.splash_one_heading }}</h2>{% endif %}
+        {% if site.params.services.splash_one_paragraph %}<p class="text-white large">{{
+          site.params.services.splash_one_paragraph }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+  <svg aria-hidden="true" role="presentation" viewBox="0 0 100 10">
+    <polygon class="svg-secondary" points="0,0 0,20 100,100 100,0 60,10" />
+  </svg>
+</div>
+{% endif %}
+
+{% include contact-cta.html
+heading=site.params.contact_cta.heading
+subheading=site.params.contact_cta.subheading
+button_url=site.params.contact_cta.button_url
+button_text=site.params.contact_cta.button_text
+%}

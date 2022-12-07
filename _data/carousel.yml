@@ -1,0 +1,13 @@
+images: 
+  - image: /assets/images/slider/career-banner-carousel.webp
+    imagePng: /assets/images/slider/career-banner-carousel.png
+    url: '/career/'
+    title: '<span style="font-size: 8vw; line-height:1;"> Calling </span> <br> <span style="font-size:5vw; color:rgb(23,198,252);"> All Leaders</span> '
+    description: 'Think Big <b style="color:rgb(23,198,252);">| </b> Act Bold <b style="color:rgb(23,198,252);">| </b> Be the change'
+    button: 'JOIN US'
+  - image: /assets/images/slider/contain-banner-carousel.webp
+    imagePng: /assets/images/slider/contain-banner-carousel.png
+    url: '/consulting/'
+    title: 'Modernize your <br> IT Stack'
+    description: 'Build, Containerize and Manage your apps on KBS'
+    button: 'LEARN MORE'

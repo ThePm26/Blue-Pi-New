@@ -1,0 +1,64 @@
+---
+layout: default
+title: Retail Wiki
+subtitle: An information about Retail tech innovation venture patterns
+meta_description: An information about Retail tech innovation venture patterns
+body_classes: page-work-list
+---
+
+<div class="container pt-12 pb-7">
+<div class="about_container">
+  <div class="about_right">
+      <div class="about_right_content onova_content">
+          <div data-aos="fade-up" class="aos-init aos-animate">
+              <h4 style="color: rgb(23, 198, 252); text-transform: uppercase; letter-spacing: 4px;">{{ page.title }}</h4>
+              <h1 style="color: rgb(58, 57, 57); font-size: 10vh; line-height: 65px;">Welcome to our retail wiki</h1>
+              <h3 style="color: rgb(26, 25, 25); font-size: 20px; line-height: 30px; padding-top: 18px;">{{ page.subtitle }}</h3>
+          </div>
+
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+      {% for retailwiki in site.retailwiki reversed %}
+      <div class="col-12 col-md-6 col-lg-4 mb-3 aos-init" data-aos="fade-up">
+      <div class="service service-summary box retailwiki-box">
+        <div class="post-title">
+          <h2><a class=" retailwiki-title" href="{{ retailwiki.url }}">{{ retailwiki.title }}</a></h2>
+        </div>
+        <div class="post-meta retailwiki-meta">
+          {% if retailwiki.author %}
+          {% include post-author.html author=post.author %}
+          {% endif %}
+          {% if retailwiki.author %}
+          <span class="on">-</span>
+          {% endif %}
+          {{ retailwiki.date | date_to_long_string }}
+        </div>
+        <div class="post-description">
+          <p>{{ retailwiki.description }}</p>
+        </div>
+        <div class="post-content retailwiki-content">
+          <p>{{ retailwiki.content | strip_html | truncatewords:50 }}</p>
+        </div>
+        {% if retailwiki.categories.size > 0 %}
+        <div class="post-categories">
+          <strong>Categories:</strong>
+          {% for category in retailwiki.categories %}
+          <a class="post-category" href="{{ site.baseurl }}/categories/#{{category|slugize}}">{{ category }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <div class="retailwiki-footer">
+          <div class="post-link pt-2"><a class="post-read-more retailwiki-link" href="{{ retailwiki.url | relative_url }}">Read More<i class="fas fa-long-arrow-alt-right ml-1"></i></a></div>
+        </div>
+          
+      </div>
+      </div>
+      {% endfor %}
+    
+  </div>
+</div>

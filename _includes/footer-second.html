@@ -1,0 +1,40 @@
+<div class="footer-second">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-second-menu">
+          <div class="row">
+
+            {% if site.params.footer.show_menu_footer_primary %}
+              <div class="col-12 col-md-3">
+                <h3>Solutions</h3>
+                {% include menu-footer-primary.html %}
+              </div>
+            {% endif %}
+
+            {% if site.params.footer.show_menu_footer_secondary %}
+            <div class="col-12 col-md-3">
+              <h3>Resources</h3>
+              {% include menu-footer-secondary.html %}
+            </div>
+            {% endif %}
+
+            {% if site.params.footer.show_menu_footer_third %}
+            <div class="col-12 col-md-3">
+              <h3>Company</h3>
+              {% include menu-footer-third.html %}
+            </div>
+            {% endif %}
+
+            {% if site.params.footer.show_menu_footer_fourth %}
+            <div class="col-12 col-md-3">
+              <h3>Contact</h3>
+              {% include menu-footer-fourth.html %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

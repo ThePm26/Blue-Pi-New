@@ -1,0 +1,37 @@
+.about-one  .overlay-anim-black-bg{
+	animation:none!important;
+}
+
+.btns-box.search .theme-btn{
+    margin-top: 20px;
+}
+.mobile-menu .nav-logo {
+    padding-bottom: 50px!important;
+}
+
+.single-comment-box{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.comments-form-area h3{
+	font-size:30px;
+	font-weight:600;
+	line-height:40px;
+}
+
+.blog-details-content .comment-box .comment {
+    margin-bottom: 15px!important;
+}
+
+.blog-details-content .post-share-option .tags-list li a {
+    padding: 3px 14px!important;
+    border: 1px solid #e5e5e5;
+}
+
+.mr_index .news-block-one .inner-box {
+    margin-bottom: 40px!important;
+}
+
+.mobile-menu .navigation li ul li > a {
+    text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+source "https://rubygems.org"
+gem 'github-pages'
+gem 'jekyll-environment-variables'
+gem 'jekyll_picture_tag'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jekyll-archives'
+gem 'jekyll-feed'
+gem 'jekyll-paginate-v2'

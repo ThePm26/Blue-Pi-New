@@ -1,0 +1,125 @@
+---
+layout: default
+title: Data Science & Artificial Intelligence/Machine Learning
+subtitle: Use Your Data To Gain Competitive Edge, Improve Efficiency, Reduce Costs
+meta_title: 'Data Science'
+meta_description: 'At BluePi we help you leverage the power of Data Science to build customised model that helps our customer define the next course of action depending on the outcome of the model.'
+body_classes: page-services-list
+---
+
+<!--start banner section-->
+<div
+  style="position: absolute; filter: brightness(0.8); background-image: url(/assets/images/data-science-banner.png); width: 100%; height: 530px; background-position: center;">
+</div>
+<div class="container pb-6 cdp-head">
+  {% include about_datascience.html %}
+</div>
+<!--end banner section-->
+<div class="navbar_wrap" style="margin-top: 0px;">
+  <div class="navbar-cdp">
+    <ul class="navbar-sco-ul">
+      <!-- <li onclick="scrollToTop('whatwedo')"> What we do</li> -->
+      <li onclick="scrollToTop('work')" style="width: 33.3%;"> Solutions</li>
+      <li onclick="scrollToTop('case-study')" style="width: 33.3%;">Case Study</li>
+      <li onclick="scrollToTop('retail-blog')" style="width: 33.3%;">Blog</li>
+    </ul>
+  </div>
+</div>
+
+<!-- start section 1 -->
+<div class="strip strip-white pt-6 pb-10 splash splash-one">
+  <div class="container">
+    <div class="row" style="margin-top: 1px;">
+      <div class="col-12 {% if site.params.homepage.splash_one_image %}col-md-6{% else %}col-md-12{% endif %}"
+        style="margin-top:0px" data-aos="fade-up">
+        <!-- <h2>More Than 1000+<br>Stores Are Powered <br> by Us.</h2> -->
+        <h3 style="font-weight: 800; font-size: 25px; padding-bottom: 14px;">Leverage The Power Of Data Science To Build Customised Model That Helps Our Customer</h3>
+        <div>
+          <ul
+          style="list-style-type: disc; list-style-position: outside; padding-bottom: 20px; font-size: 19px; padding-left: 20px;">
+          <li style="padding-bottom: 20px;"> Nowadays knowing the future is as important as knowing the present. </li>
+          <li style="padding-bottom: 20px;"> At BluePi we help you leverage
+            the power of Data Science to build customised model that helps our customer define the next course
+            of action depending on the outcome of the model. </li>
+          <li style="padding-bottom: 20px;"> Our Machine Learning and AI solutions help you
+            drive the business in a more predictive manner. </li>
+          <li style="padding-bottom: 20px;"> We help you segregate signal from noise from the
+            voluminous data that you hold.</li>
+          <li style="padding-bottom: 20px;"> We build cloud agnostic solutions and our expertise in AWS, GCP and
+            Azure platforms help us leverage our models to a desirable scale.</li>
+        </ul>
+          <!-- <p style="font-size: 19px; text-align: justify;">
+            Nowadays knowing the future is as important as knowing the present. At BluePi we help you leverage
+            the power of Data Science to build customised model that helps our customer define the next course
+            of action depending on the outcome of the model. Our Machine Learning and AI solutions help you
+            drive the business in a more predictive manner. We help you segregate signal from noise from the
+            voluminous data that you hold. We build cloud agnostic solutions and our expertise in AWS, GCP and
+            Azure platforms help us leverage our models to a desirable scale.
+          </p> -->
+      </div>
+    </div>  
+      <div class="col-12 col-md-6 " data-aos="fade-up">
+        {% picture "{{relative_url}}/assets/images/datascience_hero.png" --alt retailstore %}
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- end start section 1 -->
+
+
+<!--start cdp-work section-->
+<div class="strip strip-grey" id="work">
+  <div class="intro intro-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" data-aos="fade-up">
+          <h3 class="text-center mb-3" style="text-transform: uppercase; letter-spacing: 4px;">Some of our impactful
+            work
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-6">
+    <div class="row" style="justify-content: center;">
+      {% for datascience in site.datascience %}
+      <div class="col-12 col-md-6 mb-3" data-aos="fade-up">
+        <div class="service service-summary radius" style="align-items: center;
+      background: #ffffff;">
+          {% if datascience.icon %}
+          <div class="service-image">
+            <img src="{{datascience.icon | relative_url}}" />
+          </div>
+          {% endif %}
+          <div class="service-title" style="font-size: 20px; text-align: center;">
+            <h2>{{ datascience.title }}</h2>
+          </div>
+          <div class="service-description" style="text-align: justify;">
+            <p>{{ datascience.description }}</p>
+          </div>
+          <div class="service-content" style="text-align: center; color:#4d606d; font-size: 19px;">
+            {{ datascience.content }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!--end cdp-work section-->
+
+<!-- case-study section -->
+{% include dataScience-case-study.html %}
+
+<!-- blog section -->
+{% include dataScience-blog.html %}
+
+{% include contact-cta.html
+heading=site.params.contact_cta.heading
+subheading=site.params.contact_cta.subheading
+button_url=site.params.contact_cta.button_url
+button_text=site.params.contact_cta.button_text
+%}

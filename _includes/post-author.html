@@ -1,0 +1,7 @@
+{% assign author = site.data.authors[include.author] %}
+<div class="post-author">
+  <div class="post-author-info">
+    <span class="post-author-name">{{ author.name }}</span>
+    <span class="post-author-date">{{ include.date | date_to_long_string }}</span>
+  </div>
+</div>

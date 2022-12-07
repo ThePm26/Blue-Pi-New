@@ -1,0 +1,14 @@
+[{
+    "title": "Data",
+    "description": "New clients recieve an obligation free consultation.",
+    "image": "assets/images/features/noun_server connections_1735009.svg",
+    "url" : "/data"
+  },
+  {
+    "title": "Cloud",
+    "description": "All members of our team are certified accountants.",
+    "image": "assets/images/features/noun_web coding_1734983.svg",
+    "url" : "/cloud"
+  },
+  
+]

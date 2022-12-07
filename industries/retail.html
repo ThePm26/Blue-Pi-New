@@ -1,0 +1,98 @@
+---
+layout: default
+title: Supply Chain Optimization
+subtitle: Strategic and operational planning based on our proprietary methodology.
+meta_title: 'Supply Chain Optimization'
+meta_description: 'Our supply chain solutions driven by AI algorithms perfected for different retail formats like multi-format, grocery, apparel among others.'
+body_classes: page-services-list
+redirect_from:
+- /solutions/supply-chain-optimization
+- /retail
+---
+<div style="position: absolute; filter: brightness(0.8); background-image: url(/assets/images/retail1.png); width: 100%; height: 540px;">
+  <!-- {% picture "{{relative_url}}/assets/images/retail1.png" --alt career %} -->
+</div>
+<div class="container pb-6" style="color: rgb(255, 255, 255); position: relative; margin-top: 186px;">
+  {% include about_retail.html %}
+</div>
+</div>
+
+<div class="navbar_wrap">
+<div class="navbar">
+  <ul>
+    <li onclick="scrollToTop('solution')"> Solution</a></li>
+    <li onclick="scrollToTop('case-study')"> Case Studies</a></li>
+    <li onclick="scrollToTop('retail-blog')"> Blog</a></li>
+  </ul>
+</div>
+</div>
+
+
+<!-- start section 3 -->
+<div class="strip pt-6 splash splash-one" data-aos="fade-up">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 {% if site.params.homepage.splash_one_image %}col-md-6{% else %}col-md-12{% endif %}"
+        data-aos="fade-up" style=" margin-top: 59px">
+        <h3 style="font-size: 18px; line-height: 28px; font-weight: 700;">Retail was one of the most impacted industries
+          during COVID time. Firms that prioritized Digital Transformation and Supply Chain optimization came out as clear winners, post the
+          lockdown blues. </h3><br>
+
+        <h3 style="font-size: 18px; line-height:28px; font-weight: 700;">Retail Association of India reported 93% of pre
+          COVID sales by Feb 2021 and players with online presence stood strong during the second wave. </h3>
+      </div>
+
+      <div class="col-12 col-md-6 " data-aos="fade-right">
+        {% picture "{{relative_url}}/assets/images/retail-p.png" style="width:90%;" --alt retailstore %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end start section 1 -->
+<!--start section 4-->
+<div class="strip strip-grey" data-aos="zoom-in" id="solution">
+  <h3 class="text-center mb-3" style="text-transform: uppercase; letter-spacing: 4px; padding-top: 73px;">Have a look
+    at our solutions</h3>
+  <div class="container">
+    <div class="justify-content-center">
+      <div class="col-12 col-md-12 mb-2 pb-10 flex-box-ai">
+        <div class="service service-summary box" style="border-radius: 10px" data-aos="fade-up"> 
+          <div class="feature-image" style="float: left; width: 100px; margin-right: 25px;">
+            {% picture "{{relative_url}}/assets/images/cdp1.png" --alt cdp %}
+          </div>
+          <h4 class="feature-title" style="font-size: 30px; font-weight: 800; padding-top: 10px;">Customer Data Platform</h4>
+          <p>An innovative tool to consolidate all the relevant data</p>
+          <div>
+            <a class="service-read-more" href="{{relative_url}}/industries/retail/customer-data-platform/" >Read
+              More<i class="fas fa-long-arrow-alt-right ml-1"></i></a>
+          </div>
+        </div>
+        <div class="service service-summary box" style="border-radius: 10px" data-aos="fade-up">
+          <div class="feature-image" style="float:left; width: 100px; margin-right: 25px;">
+            {% picture "{{relative_url}}/assets/images/sco1.png" --alt sco %}
+          </div>
+          <h4 class="feature-title" style="font-size: 30px; font-weight: 800; padding-top: 10px;">Supply Chain Optimization</h4>
+          <p>AI driven supply chain optimization</p>
+          <div>
+            <a class="service-read-more" href="{{relative_url}}/industries/retail/supply-chain-optimization/" >Read
+              More<i class="fas fa-long-arrow-alt-right ml-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end section 4-->
+{% include case-study.html %}
+{% include retail-blog.html %}
+
+
+{% include contact-cta.html
+heading=site.params.contact_cta.heading
+subheading=site.params.contact_cta.subheading
+button_url=site.params.contact_cta.button_url
+button_text=site.params.contact_cta.button_text
+%}
+<script>$(".navbar a").click(function(e){
+  $("#solution, #case-study, #retail-blog ").addClass("space_click");
+});</script>

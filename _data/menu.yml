@@ -1,0 +1,106 @@
+main:
+  - name: Data
+    dropdown:
+        - text : "Big Data"
+          url1: /big-data/
+        - text : "Data Science"
+          url1: /data-science/
+  - name: App Modernisation
+    url: /app-modernisation
+    weight: 6
+  - name: Cloud
+    dropdown:
+        - text : "Migration"
+          url1: /migration/
+        - text : "DevOps"
+          url1: /devops/
+        - text : "Consulting"
+          url1: /consulting/
+  - name: Industries
+    url: /retail
+    dropdown:
+        - text : "Retail"
+          url1: /industries/retail
+        - text : "BFSI"
+          url1: /industries/bfsi
+    weight: 6
+  - name: Career
+    dropdown:
+        - text : "Join Us"
+          url1: /career
+        - text : "Why Join BluePi"
+          url1: /why-bluepi
+        - text : "Core Values"
+          url1: /values
+        - text : "Leadership"
+          url1: /team
+        - text : "Life at Bluepi"
+          url1: /bluepi-life
+
+  - name: Media Coverage
+    url: /media-coverage
+    weight: 6
+footer_primary:
+  - name: Supply Chain Optimization
+    url: /industries/retail/supply-chain-optimization/
+    weight: 1
+  - name: BFSI
+    url: /industries/bfsi
+    weight: 6
+  - name: Big Data
+    url: /big-data/
+    weight: 2
+  - name: Data Science
+    url: /data-science/
+    weight: 3
+  - name: Cloud Migration
+    url: /migration/
+    weight: 4
+  - name: DevOps
+    url: /devops/
+    weight: 5
+  - name: Cloud Consulting
+    url: /consulting/
+    weight: 6
+footer_secondary:
+  - name: Case study
+    url: /case-study/
+    weight: 7
+  - name: Media Coverage
+    url: /media-coverage/
+    weight: 8
+  - name: Join Us
+    url: /career 
+    weight: 9
+  - name: Team
+    url: /team/
+    weight: 10
+  - name: Blog
+    url: /blog/
+    weight: 11
+  - name: Retail Wiki
+    url: /retail-wiki/
+    weight: 12
+  - name: Whitepapers
+    url: /whitepaper/
+    weight: 13
+footer_third:
+  - name: Join Us
+    url: /career/
+    weight: 14
+  - name: Why join BluePi
+    url: /why-bluepi/
+    weight: 15
+  - name: Core Values
+    url: /values/
+    weight: 16
+footer_fourth:
+  - name: Contact-us
+    url: /contact-us
+    weight: 17
+  - name: "India - +91 9319 029 977  | enquiry@bluepi.in"
+    url: /contact-us
+    weight: 18
+  - name: "Australia - +61 492 991 894 | enquiry@bluepi.com.au"
+    url: /contact-us
+    weight: 19 

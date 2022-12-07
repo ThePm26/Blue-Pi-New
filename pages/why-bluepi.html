@@ -1,0 +1,159 @@
+---
+layout: default
+title: Why join BluePi
+subtitle:
+meta_title: 'Why bluepi is a great place to work'
+meta_description: 'More productive, better run and more profitable.'
+body_classes: page-services-list
+---
+<div class="strip strip-primary-gradient">
+  <div class="intro intro-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- <h1>{{ page.title }}</h1> -->
+          <p style="padding-bottom: 37px;">{{ page.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-6" style="color: aqua;">
+    {% include about_career2.html %}
+    <div class="row">
+    </div>
+  </div>
+</div>
+
+<!---why bluepi start-->
+<div class="strip">
+  <div class="intro intro-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 style="margin-top: -65px;">Why join BluePi</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pb-6">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3">
+        <div class="service service-summary">
+          <div class="service-image">
+            <!-- <img src="/assets/images/sustain.png" /> -->
+          </div>
+          <div class="service-title">
+            <h2 style="color: royalblue;">Exciting projects </h2>
+          </div>
+          <div class="quote-text">
+            <p>We are doing transformative projects for our customers, helping them benefit from the latest in data and
+              cloud technologies. Some picture of the latest tech to highlight AWS, K8S, Databricks, Tensorflow,
+              PyTorch, React, Snowflake.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mb-3">
+        <div class="service service-summary">
+          <div class="service-image">
+            <!-- <img src="/assets/images/sustain.png" /> -->
+          </div>
+          <div class="service-title">
+            <h2 style="color: royalblue;"> No Hierarchy </h2>
+          </div>
+          <div class="quote-text">
+            <p>You hate red tape, so do we. We are a group of self-driven people working together to achieve the
+              impossible for the customer. Empowerment is a value we live by, and we expect entrepreneurial spirit in
+              every one of us.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mb-3">
+        <div class="service service-summary">
+          <div class="service-image">
+            <!-- <img src="/assets/images/sustain.png" /> -->
+          </div>
+          <div class="service-title">
+            <h2 style="color: royalblue;"> Career Progression </h2>
+          </div>
+          <div class="quote-text">
+            <p>You own your career progression at BluePi. However, we guide you through the process with our mentorship
+              programme and clear articulation and tracking of short and long term objectives. Our projects will
+              challenge you out of your comfort zone and set you up for the next role. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mb-3">
+        <div class="service service-summary">
+          <div class="service-image">
+            <!-- <img src="/assets/images/sustain.png" /> -->
+          </div>
+          <div class="service-title">
+            <h2 style="color: royalblue;"> Education </h2>
+          </div>
+          <div class="quote-text">
+            <p>We also have an extensive training curriculum to hone your skills. Your mentor works with you to identify
+              the skills needed and you will have access to the best in class and cutting edge instructor-led and
+              on-demand trainings. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--- why bluepi end-->
+{% if site.data.features.size > 0 and site.params.services.show_features %}
+<div class="strip strip-grey">
+  <div class="container pt-5 pb-5">
+    <div class="row justify-content-center">
+      {% for feature in site.data.features %}
+      <div class="col-12 col-sm-4 col-md-4 mb-2">
+        <div class="feature"> <a href="{{feature.url}}">
+            {% if feature.image %}
+            <div class="feature-image">
+              <img alt="{{ feature.title }} logo" src="{{ feature.image | relative_url}}" />
+            </div>
+            {% endif %}
+            <h2 class="feature-title">{{ feature.title }}</h2>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Splash One -->
+{% if site.params.services.show_splash_one_section %}
+<div class="strip strip-bg-primary strip-bg-cover"
+  style="background-image: url('{{ site.params.services.splash_one_background_image | relative_url }}');">
+  <svg aria-hidden="true" role="presentation" viewBox="0 0 100 5">
+    <polygon class="svg-grey" points="0,0 100,0 100,5" />
+  </svg>
+  <div class="container pt-10 pb-10">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        {% if site.params.services.splash_one_heading %}<h2 class="text-white text-capitalize">{{
+          site.params.services.splash_one_heading }}</h2>{% endif %}
+        {% if site.params.services.splash_one_paragraph %}<p class="text-white large">{{
+          site.params.services.splash_one_paragraph }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+  <svg aria-hidden="true" role="presentation" viewBox="0 0 100 10">
+    <polygon class="svg-secondary" points="0,0 0,20 100,100 100,0 60,10" />
+  </svg>
+</div>
+{% endif %}
+
+{% include contact-cta.html
+heading=site.params.contact_cta.heading
+subheading=site.params.contact_cta.subheading
+button_url=site.params.contact_cta.button_url
+button_text=site.params.contact_cta.button_text
+%}

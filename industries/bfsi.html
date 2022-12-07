@@ -1,0 +1,57 @@
+---
+layout: default
+title: BFSI
+subtitle: Custom data, analytics, and AI/ML solutions that help drive key business outcomes for banks, financial institutions, and insurance players.
+meta_description: AI/ML solutions that help drive key business outcomes for banks, financial institutions, and insurance players
+body_classes: page-services-list
+redirect_from:
+- /bfsi
+---
+<div style="position: absolute; filter: brightness(0.8); background-image: url(/assets/images/bfsi-head.png); width: 100%; height: 540px;">
+  <!-- {% picture "{{relative_url}}/assets/images/retail1.png" --alt career %} -->
+</div>
+<div class="container pb-6 bfsi-head">
+  {% include about_bfsi.html %}
+</div>
+</div>
+
+<div class="navbar_wrap">
+<div class="navbar-bfsi">
+  <ul>
+    <li><a href="#solution"> Solution</a></li>
+    <li><a href="#case-study"> Case Study</a></li>
+    <li><a href="#retail-blog"> Blog</a></li>
+  </ul>
+</div>
+</div>
+<!-- start brief section -->
+
+<div class="strip pt-6 splash splash-one" data-aos="fade-up">
+  <div class="container">
+    <div class="row" style="margin-bottom: 61px;">
+      <div class="col-12 {% if site.params.homepage.splash_one_image %}col-md-6{% else %}col-md-12{% endif %}"
+        data-aos="fade-left">
+        <h3 style="font-size: 18px; line-height: 28px; font-weight: 700;">India is set to become the third-largest domestic banking sector by 2050. Adequate investment, right technology and government’s support have come together to build an ecosystem to enable BFSI’s anticipated growth.  </h3><br>
+        <h3 style="font-size: 18px; line-height:28px; font-weight: 700;">But are the traditional financial institutions ready for the disruption these forces may bring in the future? Can financial institutions work in a synergy Are they ready for a disruptive event like covid which changed the customer behaviour completely in such a short period?
+        </h3>
+      </div>
+
+      <div class="col-12 col-md-6 " data-aos="fade-up">
+        {% picture "{{relative_url}}/assets/images/bfsi-main.png" style="width:90%;" --alt retailstore %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end breif section  -->
+{% include bfsi-solution-ai.html %}
+{% include bfsi-solution-cx.html %}
+{% include bfsi-casestudy.html %}
+{% include bfsi-blog.html %}
+
+
+{% include contact-cta.html
+heading=site.params.contact_cta.heading
+subheading=site.params.contact_cta.subheading
+button_url=site.params.contact_cta.button_url
+button_text=site.params.contact_cta.button_text
+%}

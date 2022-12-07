@@ -1,0 +1,19 @@
+<!-- Html Elements for Search -->
+<div id="search-container" style="position: relative;">
+    <input type="text" id="search-input" placeholder="Search..." style="padding: 3px 10px;background: #ebeced;border: none;border-radius: 5px; margin-left: 8px;">
+    <ul id="results-container" style="position: absolute; background: #fff; padding-left: 20px; padding-right: 20px; max-height: 50vh; overflow-x: scroll;
+    overflow: hidden; right: 0;"></ul>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script src="/assets/js/search-script.js" type="text/javascript"></script>
+
+
+<!-- Configuration -->
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json'
+    })
+</script>

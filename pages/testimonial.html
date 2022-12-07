@@ -1,0 +1,63 @@
+---
+layout: default
+title: "Testimonials"
+subtitle: "What our customers say" 
+meta_description: Helping our customers succeed with Data
+body_classes: page-team-list
+---
+
+<div class="intro intro-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {% for testimonial in site.testimonials %}
+    <div class="col-12 col-md-6 mb-3 mb-md-3">
+      <div class="team team-summary">
+        {% if testimonial.image %}
+        <div class="team-image">
+          <img alt="{{ testimonial.title }} logo" class="img-fluid mb-2" src="{{ testimonial.image | relative_url}}" />
+        </div>
+        {% endif %}
+        <div class="team-block">
+          <div class="team-meta">
+            <h2 class="team-name">{{ testimonial.title }}</h2>
+            <div class="team-jobtitle">{{ testimonial.jobtitle }}</div>
+            <div class="team-links">
+              {% if testimonial.linkedin_url %}
+              <a class="team-linkedin" target="_blank" href="{{ testimonial.linkedin_url }}">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              {% endif %}
+              {% if testimonial.twitter_url %}
+              <a class="team-linkedin" target="_blank" href="{{ testimonial.twitter_url }}">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              {% endif %}
+              {% if testimonial.dribble_url %}
+              <a class="team-linkedin" target="_blank" href="{{ testimonial.dribble_url }}">
+                <i class="fab fa-dribbble-square"></i>
+              </a>
+              {% endif %}
+              {% if testimonial.behance_url %}
+              <a class="team-linkedin" target="_blank" href="{{ testimonial.behance_url }}">
+                <i class="fab fa-behance-square"></i>
+              </a>
+              {% endif %}
+            </div>
+          </div>
+          <div class="team-content">{{ testimonial.content }}</div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,134 @@
+---
+layout: default
+title: Retail Analytics
+subtitle: Strategic and operational planning based on our proprietary methodology.
+meta_title: 'Retail Analytics'
+meta_description: 'Profitability Analytics | Product Dashboard | Store Analytics | Customer Dashboard'
+body_classes: page-services-list
+---
+
+<!--start banner section-->
+<div
+  style="position: absolute; filter: brightness(0.8); background-image: url(/assets/images/retail_analytics.jpg); width: 100%; height: 540px;
+   background-size: cover; background-position: center;">
+</div>
+<div class="container pb-6 cdp-head">
+  {% include about_retailanalytics.html %}
+</div>
+<!--end banner section-->
+<div class="navbar_wrap">
+  <div class="navbar-cdp">
+    <ul class="navbar-sco-ul">
+      <!-- <li onclick="scrollToTop('whatwedo')"> What we do</li> -->
+      <li onclick="scrollToTop('work')" style="width: 33.3%;"> Solutions</li>
+      <li onclick="scrollToTop('case-study')" style="width: 33.3%;">Case Study</li>
+      <li onclick="scrollToTop('retail-blog')" style="width: 33.3%;">Blog</li>
+    </ul>
+  </div>
+</div>
+
+<!-- start section 1 -->
+<div class="strip strip-grey pt-6 pb-10 splash splash-one">
+  <div class="container">
+    <div class="row" style="margin-top: 1px;">
+      <div class="col-12 {% if site.params.homepage.splash_one_image %}col-md-6{% else %}col-md-12{% endif %}"
+        style="margin-top:0px" data-aos="fade-up">
+        <!-- <h2>More Than 1000+<br>Stores Are Powered <br> by Us.</h2> -->
+        <h3 style="font-weight: 800; font-size: 25px; padding-bottom: 14px;">
+          More Than 50+ key metrics surfaced through an integrated Dashboard.
+        </h3>
+        <h3 style="font-size: 25px; padding-bottom: 14px;">Ask Yourself</h3>
+        <ul
+          style="list-style-type: disc; list-style-position: outside; font-size: 19px; padding-left: 20px;">
+          <li style="padding-bottom: 20px;">
+            BluePi offers a comprehensive cloud migration offering.Do you know how much sales you are potentially losing due to
+            stockouts?
+          </li>
+          <li style="padding-bottom: 20px;">
+            Do you know if you are carrying excess inventory for a particular category or SKU?
+          </li>
+          <li style="padding-bottom: 20px;"> 
+             What is your demand fill rate? what is stopping you to improve your fulfilment rates?
+          </li>
+          <li style="padding-bottom: 20px;">
+            Which are the key factors impacting your profitability?
+          </li>
+          <li style="padding-bottom: 20px;">
+            How long does it take your team to find the root cause of inventory roadblocks? 
+          </li>
+        </ul>
+        <div style="font-size: 19px; text-align: justify; ">
+            <p style="color: #4e4e4e;">
+              If you answered yes to any of these questions, you need a reliable analytics system that is tailor
+              build for retail organizations. Hindsight is always perfect, but foresight is what makes you
+              profitable.
+            </p>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 " data-aos="fade-right">
+        {% picture "{{relative_url}}/assets/images/retail_analytics_hero.png" --alt retailstore %}
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- end start section 1 -->
+
+
+<!--start cdp-work section-->
+<div class="strip strip-white" id="work">
+  <div class="intro intro-big">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" data-aos="fade-up">
+          <h3 class="text-center mb-3" style="text-transform: uppercase; letter-spacing: 4px;">Some of our impactful
+            work
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" style="justify-content: center;">
+      {% for retailanalytics in site.retailanalytics %}
+      <div class="col-12 col-md-6 mb-3" data-aos="fade-up">
+        <div class="service service-summary radius" style="align-items: center;
+      background: #f5f5f5;">
+          {% if retailanalytics.icon %}
+          <div class="service-image">
+            <img src="{{retailanalytics.icon | relative_url}}" />
+          </div>
+          {% endif %}
+          <div class="service-title" style="font-size: 20px; text-align: center;">
+            <h2>{{ retailanalytics.title }}</h2>
+          </div>
+          <div class="service-description" style="color: #4d606d; font-size: 19px;">
+            <p>{{ retailanalytics.description }}</p>
+          </div>
+          <div class="service-content" style="color: #4d606d; font-size: 19px;">
+            {{ retailanalytics.content | truncate: 180 }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!--end cdp-work section-->
+
+<!-- case-study section -->
+{% include retail-analytics-case-study.html %}
+
+<!-- blog section -->
+{% include retail-analytics-blog.html %}
+
+<!-- contact-info section -->
+{% include contact-cta.html
+  heading=site.params.contact_cta.heading
+  subheading=site.params.contact_cta.subheading
+  button_url=site.params.contact_cta.button_url
+  button_text=site.params.contact_cta.button_text
+%}

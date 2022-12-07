@@ -1,0 +1,2032 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>BluePi</title>
+
+<!-- Fav Icon -->
+<!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+
+<!-- Stylesheets -->
+<link href="assets/css/font-awesome-all.css" rel="stylesheet">
+<link href="assets/css/flaticon.css" rel="stylesheet">
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/css/color.css" rel="stylesheet">
+<link href="assets/css/global.css" rel="stylesheet">
+<link href="assets/css/elpath.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+
+<!-- page wrapper -->
+<body>
+
+    <div class="boxed_wrapper">
+
+
+        <!-- mouse-pointer -->
+        <div class="mouse-pointer" id="mouse-pointer">
+            <div class="icon"><i class="far fa-angle-left"></i><i class="far fa-angle-right"></i></div>
+        </div>
+        <!-- mouse-pointer end -->
+
+
+       
+
+
+        <!--Search Popup-->
+        <div id="search-popup" class="search-popup">
+            <div class="popup-inner">
+                <div class="upper-box clearfix">
+                    <figure class="logo-box pull-left"><a href="#"><img src="assets/images/logo.png" alt=""></a></figure>
+                    <div class="close-search pull-right"><span class="icon-179"></span></div>
+                </div>
+                <div class="overlay-layer"></div>
+                <div class="auto-container">
+                    <div class="search-form">
+                        <form method="post" action="index.html">
+                            <div class="form-group">
+                                <fieldset>
+                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required >
+                                    <button type="submit"><i class="icon-1"></i></button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- main header -->
+        <header class="main-header">
+            <!-- header-top-one -->
+            <!-- <div class="header-top-one p_relative d_block">
+                <div class="auto-container">
+                    <div class="top-inner clearfix p_relative">
+                        <div class="shape p_absolute t_0" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                        <div class="top-left pull-left">
+                            <ul class="social-links clearfix">
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55">Follow Us:</li>
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-twitter"></i></a></li>
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="p_relative d_iblock fs_16 float_left lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="top-right pull-right">
+                            <ul class="info clearfix">
+                                <li class="search-box-outer search-toggler p_relative d_iblock float_left mr_60 lh_55">
+                                    <i class="icon-1"></i>
+                                </li>
+                                <li class="p_relative d_iblock float_left mr_60 lh_55 pl_25 fs_16">
+                                    <i class="icon-2"></i>
+                                    <p>Call: <a href="tel:123045615523">+1 (230)- 456-155-23</a></p>
+                                </li>
+                                <li class="p_relative d_iblock float_left lh_55 pl_25 fs_16">
+                                    <i class="icon-3"></i>
+                                    <p>Email: <a href="mailto:sample@example.com">sample@example.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt="bluepi logo"></a></figure>
+                        </div>
+                        <div class="menu-area clearfix">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix home-menu font-roboto">
+
+                                        <li class=" dropdown">
+                                            <a href="#">Data</a>
+                                            <ul>
+                                                <li><a href="/pages/big-data.html">Big Data</a></li>
+                                                <li><a href="/pages/data-science.html">Data Science</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="/pages/app-modernisation.html">App Modernisation</a>
+                                            <ul>
+                                                <li><a href="/pages/devops.html">DevOps</a></li>
+                                                <li><a href="/pages/cloud.html">Cloud</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Industries</a>
+                                            <ul>
+                                                <li><a href="/pages/retail-wiki.html">Retail</a></li>
+                                                <li><a href="/industries/bfsi.html">BFSI</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Career</a>
+                                            <ul>
+                                                <li><a href="/pages/career.html">Join us</a></li>
+                                                <li><a href="pages/why-bluepi.html">Why join BluePi</a></li>
+                                                <li><a href="pages/values.html">Core values</a></li>
+                                                <li><a href="/pages/team.html">Leadership</a></li>
+                                                <li><a href="/pages/bluepi-life.html">Life at BluePi</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/media-coverage.html">Media coverage</a>
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="#"><i class="icon-1"></i></a>
+                                            <ul>
+                                            <form method="post" action="index.html">
+                                                <div class="form-group">
+                                                    <fieldset class="padding-outer">
+                                                        <input type="search" class="form-control padding-box" name="search-input" value="" placeholder="Type your keyword" required >
+                                                    </fieldset>
+                                                </div>
+                                            </form>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="btn-box">
+                            <a href="/pages/contact-us.html" class="theme-btn theme-btn-one font-roboto btn-cont">Contact<i class="icon-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt=""></a></figure>
+                        </div>
+                        <div class="menu-area clearfix">
+                            <nav class="main-menu clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                        </div>
+                        <div class="btn-box">
+                            <a href="https://www.bluepiit.com/contact-us" class="theme-btn theme-btn-one btn-cont">Contact<i class="icon-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="#"><img src="assets/images/logos/logo-invert.png" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Gurugram, Haryana , India</li>
+                        <li><a href="tel:+8801682648101"> +91 93 1902 9977</a></li>
+                        <li><a href="mailto:info@example.com"> enquiry@bluepi.in</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+
+        <!-- banner-section -->
+        <section class="slider-one centred p_relative screen-section scr-sec">
+            <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/main-banner-2.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25 font-lato"><span class="slider-text-anim"><p class="ban-font-size"> Transform your business <br> with us </p></span></h2>
+                            <p class="d_block fs_18 mb_45 font-roboto">Data driven business transformation</p>
+                            <div class="btn-box">
+                                <a href="#" class="theme-btn theme-btn-one font-roboto btn-ban">Learn more<i class="icon-4"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/abstract-plexus-geometrical-shapes.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25 font-lato"><span class="slider-text-anim"> <p class="ban-font-size">Be one step ahead <br> with BluePi</p></span></h2>
+                            <p class="d_block fs_18 mb_45 font-roboto">Future proof modern application stack</p>
+                            <div class="btn-box">
+                                <a href="#" class="theme-btn theme-btn-one font-roboto btn-ban">Learn more<i class="icon-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/abstract-plexus-blue-geometrical-shapes-connection-web-concept.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25 font-lato"><span class="slider-text-anim"> <p class="ban-font-size">Discover your true <br> potential</p></span></h2>
+                            <p class="d_block fs_18 mb_45 font-roboto">Think Big | Act Bold | Learn</p>
+                            <div class="btn-box">
+                                <a href="#" class="theme-btn theme-btn-one font-roboto btn-ban">Learn more<i class="icon-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="slide_buttons"></div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	 -->
+        </section>
+        <!-- banner-section end -->
+
+         <!-- Mobile-banner -->
+         <section class="slider-one centred p_relative mobile-section mob-sec">
+            <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/main-banner-2.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25 font-lato"><p class="ban-font-size-mob">Transform your business <br> with us</p></span></h2>
+                            <p class="d_block fs_18 font-roboto">Data driven business transformation</p>
+                            <div class="btn-box">
+                                <a href="index.html" class="theme-btn theme-btn-one font-roboto btn-ban">Learn more<i class="icon-4"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/abstract-plexus-geometrical-shapes.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25 font-lato"><p class="ban-font-size-mob">Be one step ahead <br> with BluePi</p></span></h2>
+                            <p class="d_block fs_18 font-roboto">Future proof modern application stack</p>
+                            <div class="btn-box">
+                                <a href="index.html" class="theme-btn theme-btn-one font-roboto btn-ban">Learn more<i class="icon-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/abstract-plexus-blue-geometrical-shapes-connection-web-concept.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25 font-lato"><p class="ban-font-size-mob">Discover your true potential</p></span></h2>
+                            <p class="d_block fs_18 font-roboto">Think Big | Act Bold | Learn</p>
+                            <div class="btn-box">
+                                <a href="index.html" class="theme-btn theme-btn-one font-roboto btn-ban">Learn more<i class="icon-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/main-banner.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25 font-lato"><span class="slider-text-anim"><p class="ban-font-size">Data Driven business <br> transformation</p></span></h2>
+                            <p class="d_block fs_18 mb_45 font-roboto">Welcome to BluePi</p>
+                            <div class="btn-box">
+                                <a href="index.html" class="theme-btn theme-btn-one font-roboto">Get Strated<i class="icon-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="slide_buttons"></div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	 -->
+        </section>
+        <!-- banner-section end -->
+
+        <!-- template-1 -->
+        <!-- about-19 -->
+        <section class="about-19 p_relative sec-pad screen-about">
+            <div class="pattern-layer p_absolute l_100 t_50 float-bob-y" style="background-image: url(assets/images/shape/shape-184.png);"></div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                <div class="col-md-12 col-sm-12 content-column">
+                    <div class="content_block_one">
+                        <div class="content-box p_relative d_block about-center about-container">
+                            <div class="about-center-grid">
+                                <div class="sec-title-six p_relative d_block">
+                                    <h2 class="d_block fs_40 lh_52 fw_bold heading-clr head-padding">Who We Are</h2>
+                                </div>
+                                <ul class="clearfix p_relative d_block flex-list">
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8 margin-left-point"> <img src="/assets/images/icons/innovation.png" alt="" class="about-icon"> Innovators</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8 margin-left-point"> <img src="/assets/images/icons/employment-thinker.png" alt="" class="about-icon">Thinkers</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8 margin-left-point"> <img src="/assets/images/icons/collaboration.png" alt="" class="about-icon">Collaborators</li>
+                                    
+                                </ul>
+                                <div class="text p_relative d_block mb_25">
+                                    <p class="font-roboto sub-padding">Our passion for delivering value and exceeding expectations makes us stand-out. </p>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-19 end -->
+
+        <!-- about-19 -->
+        <section class="about-19 p_relative sec-pad mobile-about">
+            <div class="pattern-layer p_absolute l_100 t_50 float-bob-y" style="background-image: url(assets/images/shape/shape-184.png);"></div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                <div class="col-md-12 col-sm-12 content-column">
+                    <div class="content_block_one">
+                        <div class="content-box p_relative d_block about-center about-container-mob">
+                            <div class="about-center-grid">
+                                <div class="sec-title-six p_relative d_block">
+                                    <h2 class="d_block fs_40 lh_52 fw_bold heading-clr head-padding-mob">Who We Are</h2>
+                                </div>
+                                <ul class="clearfix p_relative d_block flex-list-mob">
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8 margin-left-point-mob"> <img src="/assets/images/icons/innovation.png" alt="" class="about-icon"> Innovators</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8 margin-left-point-mob"> <img src="/assets/images/icons/employment-thinker.png" alt="" class="about-icon">Thinkers</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8 margin-left-point-mob"> <img src="/assets/images/icons/collaboration.png" alt="" class="about-icon">Collaborators</li>
+                                    
+                                </ul>
+                                <div class="text p_relative d_block mb_25">
+                                    <p class="font-roboto sub-padding-mob">Our passion for delivering value and exceeding expectations makes us stand-out. </p>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-19 end -->
+
+
+        <!-- funfact-ten -->
+        <section class="funfact-ten about-page-4 pb_150 text-center p_relative mar-pointer pointer-up">
+            <div class="pattern-layer">
+                <div class="pattern-1 p_absolute l_0 b_0" style="background-image: url(assets/images/shape/shape-186.png);"></div>
+                <div class="pattern-2 p_absolute r_170 b_0" style="background-image: url(assets/images/shape/shape-187.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="800ms">
+                            <div class="inner-box p_relative d_block pointer-padding-temp-1">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                    <span class="count-text p_relative font-lato pointer-size-temp-1" data-speed="2500" data-stop="1">0</span><span class="font_family_inter pointer-size-temp-1">PB</span>
+                                </div>
+                                <p class="p_relative d_block font-roboto pointer-size-1-temp-1">Data Processed every month</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="800ms">
+                            <div class="inner-box p_relative d_block pointer-padding-temp-1">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                    <span class="count-text p_relative font-lato pointer-size-temp-1" data-speed="2500" data-stop="9.6">0</span>
+                                </div>
+                                <p class="p_relative d_block font-roboto nps-size">NPS</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="800ms">
+                            <div class="inner-box p_relative d_block pointer-padding-temp-1">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                    <span class="count-text font_family_inter p_relative font-lato pointer-size-temp-1" data-speed="2500" data-stop="80">0</span><span class="font_family_inter pointer-size-temp-1">%</span>
+                                </div>
+                                <p class="p_relative d_block font-roboto pointer-size-1-temp-1">of team is certified</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="800ms">
+                            <div class="inner-box p_relative d_block pointer-padding-temp-1">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                    <span class="count-text p_relative font-lato pointer-size-temp-1" data-speed="2500" data-stop="150">0</span><span class="font_family_inter pointer-size-temp-1">+</span>
+                                </div>
+                                <p class="p_relative d_block font-roboto pointer-size-1-temp-1">Apps modernised</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- first pointer -->
+
+        <!-- funfact-ten -->
+        <!-- <section class="funfact-ten about-page-4 pb_150 text-center p_relative mar-pointer">
+            <div class="pattern-layer">
+                <div class="pattern-1 p_absolute l_0 b_0" style="background-image: url(assets/images/shape/shape-186.png);"></div>
+                <div class="pattern-2 p_absolute r_170 b_0" style="background-image: url(assets/images/shape/shape-187.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold mb_15 font_family_inter">
+                                    <span class="count-text p_relative heading-clr font-lato" data-speed="2500" data-stop="1000">0</span><span class="font_family_inter heading-clr">TB</span>
+                                </div>
+                                <p class="p_relative d_block subhead-clr-1 font-roboto">Data Processed every month</p>
+                            </div>
+                        </div>
+                    </div>
+                    ]
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold mb_15 font_family_inter">
+                                    <span class="count-text font_family_inter p_relative heading-clr font-lato" data-speed="2500" data-stop="80">0</span><span class="font_family_inter heading-clr">%</span>
+                                </div>
+                                <p class="p_relative d_block subhead-clr-1 font-roboto">of team is certified</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold mb_15 font_family_inter">
+                                    <span class="count-text font_family_inter p_relative heading-clr font-lato" data-speed="2500" data-stop="9.6">0</span>
+                                </div>
+                                <p class="p_relative d_block subhead-clr-1 font-roboto">NPS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold mb_15 font_family_inter">
+                                    <span class="count-text p_relative heading-clr font-lato" data-speed="2500" data-stop="150">0</span><span class="font_family_inter heading-clr">+</span>
+                                </div>
+                                <p class="p_relative d_block subhead-clr-1 font-roboti">Apps modernised</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- template-2 -->
+
+         <!-- about-19 -->
+         <!-- <section class="about-19 p_relative sec-pad">
+            <div class="pattern-layer p_absolute l_100 t_50 float-bob-y" style="background-image: url(assets/images/shape/shape-184.png);"></div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                        <div class="content_block_one">
+                            <div class="content-box p_relative d_block">
+                                <div class="sec-title-six p_relative d_block mb_25">
+                                    <h2 class="d_block fs_40 lh_52 fw_bold heading-clr font-lato">Who We Are</h2>
+                                </div>
+                                <ul class="list-style-one clearfix p_relative d_block flex-list">
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8">Innovators</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8">Thinkers</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8">Collaborators</li>
+                                    
+                                </ul>
+                                <div class="text p_relative d_block mb_25">
+                                    <p class="font-roboto">Our passion for delivering value and exceeding expectations makes us stand-out. </p>
+                                </div>
+                                <div class="pointer-flex">
+                                <div class="inner-box p_relative d_block pointer-padding-temp-2">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-2" data-speed="2500" data-stop="1000">0</span><span class="font_family_inter heading-clr pointer-size-temp-2">TB</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-2">Data Processed every month</p>
+                                </div>
+                                <div class="inner-box p_relative d_block pointer-padding-temp-2">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-2" data-speed="2500" data-stop="9.6">0</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-2">NPS</p>
+                                </div>
+                                <div class="inner-box p_relative d_block pointer-padding-temp-2">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-2" data-speed="2500" data-stop="80">0</span><span class="font_family_inter heading-clr pointer-size-temp-2">%</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-2">of team is certified</p>
+                                </div>
+                                <div class="inner-box p_relative d_block pointer-padding-temp-2">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-2" data-speed="2500" data-stop="150">0</span><span class="font_family_inter heading-clr pointer-size-temp-2">+</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-2">Apps modernised</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div class="image_block_20">
+                            <div class="image-box p_relative d_block ml_30 pl_50 pb_50">
+                                <div class="shape">
+                                    <div class="shape-3 p_absolute rotate-me" style="background-image: url(assets/images/shape/shape-176.png);"></div>
+                                    <div class="shape-4 p_absolute l_15 t_120 rotate-me" style="background-image: url(assets/images/shape/shape-176.png);"></div>
+                                </div>
+                                <figure class="image p_relative d_block b_radius_10"><img src="assets/images/banner/Untitled design.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- about-19 end -->
+
+
+        
+
+        <!-- template-3 -->
+
+         <!-- about-19 -->
+         <!-- <section class="about-19 p_relative sec-pad">
+            <div class="pattern-layer p_absolute l_100 t_50 float-bob-y" style="background-image: url(assets/images/shape/shape-184.png);"></div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                        <div class="content_block_one">
+                            <div class="content-box p_relative d_block">
+                                <div class="sec-title-six p_relative d_block mb_25">
+                                    <h2 class="d_block fs_40 lh_52 fw_bold heading-clr font-lato">Who We Are</h2>
+                                </div>
+                                <ul class="list-style-one clearfix p_relative d_block flex-list">
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8">Innovators</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8">Thinkers</li>
+                                    <li class="p_relative d_block fs_16 lh_25 fw_bold pull-left font_family_oxygen pl_25 mb_8">Collaborators</li>
+                                    
+                                </ul>
+                                <div class="text p_relative d_block mb_25">
+                                    <p class="font-roboto">Our passion for delivering value and exceeding expectations makes us stand-out. </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div class="image_block_20">
+                            <div class="image-box p_relative d_block ml_30 pl_50 pb_50">
+                                <div class="shape">
+                                    <div class="shape-3 p_absolute rotate-me" style="background-image: url(assets/images/shape/shape-176.png);"></div>
+                                    <div class="shape-4 p_absolute l_15 t_120 rotate-me" style="background-image: url(assets/images/shape/shape-176.png);"></div>
+                                </div>
+                                <div class="grid-2-rows">
+                                <div class="inner-box p_relative d_block pointer-padding-temp-3">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-3" data-speed="2500" data-stop="1000">0</span><span class="font_family_inter heading-clr pointer-size-temp-3">TB</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-3">Data Processed every month</p>
+                                </div>
+
+                                <div class="inner-box p_relative d_block pointer-padding-temp-3">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-3" data-speed="2500" data-stop="9.6">0</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-3">Data Processed every month</p>
+                                </div>
+
+                                <div class="inner-box p_relative d_block pointer-padding-temp-3">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-3" data-speed="2500" data-stop="80">0</span><span class="font_family_inter heading-clr pointer-size-temp-3">%</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-3">Data Processed every month</p>
+                                </div>
+
+                                <div class="inner-box p_relative d_block pointer-padding-temp-3">
+                                    <div class="count-outer count-box p_relative d_block fs_70 lh_70 fw_sbold font_family_inter">
+                                        <span class="count-text p_relative heading-clr font-lato pointer-size-temp-3" data-speed="2500" data-stop="150">0</span><span class="font_family_inter heading-clr pointer-size-temp-3">+</span>
+                                    </div>
+                                    <p class="p_relative d_block font-roboto pointer-size-1-temp-3">Data Processed every month</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- about-19 end -->
+        
+        <!-- testimonial-one -->
+        <section class="testimonial-one p_relative screen-client blue-bg">
+            <div class="auto-container">
+                <div class="inner-container p_relative pt_150 pb_140">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <!-- <div class="line line-2 p_absolute"></div> -->
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="sec-title p_relative d_block mb_60 text-center z_1 space-red">
+                        <!-- <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19 font-roboto bottom-mar">Testimonials</span> -->
+                        <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr font-lato">Customer Speak</h2>
+                        <!-- <p>Amet consectur adipiscing elit sed eiusmod ex tempor incididunt <br />labore dolore aliquaenim minim veniam.</p> -->
+                    </div>
+                    <div class="testimonial-3-grid">
+                            <div class="testimonial-block-one text-test-align">
+                                <div class="testimonial-block-three  wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="inner-box p_relative d_block pt_40 pr_30 pb_40 pl_30 b_shadow_6 mb_30 test-height-1">
+                                        <figure class="thumb-box p_relative d_iblock w_80 h_80 b_radius_50 mb_15 test-top-margin"><img src="assets/images/authors/pradeep.jpg" alt=""></figure>
+                                        <p class="font_family_poppins lh_28 color_black mb_15 t1 height-test">Cloud technology consulting is a specialized field which requires a deep understanding of the cloud ecosystem and cutting edge technologies, such as network topology architecture, containerization and ease of cloud services. That is the reason why we chose a Aws premier consulting partner such as BluePi.</p>
+                                        <h3 class="d_block fs_22 lh_30 fw_sbold mb_5 ">Pradeep Ramakrishnan</h3>
+                                        <span class="designation font_family_poppins">CTO - KFC India</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-block-one text-test-align">
+                                <div class="testimonial-block-three wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                    <div class="inner-box p_relative d_block pt_40 pr_30 pb_40 pl_30 b_shadow_6 mb-30 test-height-1">
+                                        <figure class="thumb-box p_relative d_iblock w_80 h_80 b_radius_50 mb_15 test-top-margin"><img src="assets/images/authors/vikalp_goibibo.png" alt=""></figure>
+                                        <p class="font_family_poppins lh_28 color_black mb_15 height-test">BluePi team worked with us on an ambitious and so-called Blitz-Migration project,of moving our web services to Amazon Public Cloud. The team was agile enough to not only learn our tech stack but also quickly got culturally aligned with our teams to work in an environment of high speed with the promise of reliability. BluePi teams tech-abilities and quick debugging skills were handy and ensured success to project.</p>
+                                        <h3 class="d_block fs_22 lh_30 fw_sbold mb_5">Vikalp Sahni</h3>
+                                        <span class="designation font_family_poppins">CTO at Goibibo.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-block-one text-test-align">
+                                <div class="testimonial-block-three wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                    <div class="inner-box p_relative d_block pt_40 pr_30 pb_40 pl_30 b_shadow_6 mb_30 test-height-1">
+                                        <figure class="thumb-box p_relative d_iblock w_80 h_80 b_radius_50 mb_15 test-top-margin"><img src="assets/images/authors/kapil_delivery.png" alt=""></figure>
+                                        <p class="font_family_poppins lh_28 color_black mb_15 height-test">This project has been one of the most challenging and ambitious ones for Delhivery. Given the multifaceted challenges and complexity involved, BluePi team took up the task enthusiastically and executed it all through with same perseverance and rigor. Being given the kind of reassurance and ongoing support combined with its innovative and collaborative style adds further reason for us to appreciate them.</p>
+                                        <h3 class="d_block fs_22 lh_30 fw_sbold mb_5">Kapil Bharati</h3>
+                                        <span class="designation font_family_poppins">CTO, Co-Founder at Delhivery</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                       
+                    </div>
+                    
+                </div>
+                <div class="btn-box btn-mar-test">
+                    <a href="https://www.bluepiit.com/testimonial" class="theme-btn theme-btn-one btn-align-1 font-roboto">View all Testimonials<i class="icon-4"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-one -->
+
+         <!-- testimonial-one -->
+         <section class="testimonial-one p_relative mobile-client blue-bg">
+            <div class="auto-container test-mob-cont">
+                <div class="inner-container p_relative pt_150 pb_140">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <!-- <div class="line line-2 p_absolute"></div> -->
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="sec-title p_relative d_block mb_60 text-center z_1">
+                        <!-- <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19 font-roboto bottom-mar">Testimonials</span> -->
+                        <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr font-lato">Customer Speak</h2>
+                        <!-- <p>Amet consectur adipiscing elit sed eiusmod ex tempor incididunt <br />labore dolore aliquaenim minim veniam.</p> -->
+                    </div>
+                    <div class="three-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
+                            <div class="testimonial-block-one text-test-align">
+                                <div class="testimonial-block-three  wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <div class="inner-box p_relative d_block pt_40 pr_30 pb_40 pl_30 b_shadow_6 mb_30 test-height-1">
+                                        <figure class="thumb-box p_relative d_iblock w_80 h_80 b_radius_50 mb_15"><img src="assets/images/authors/pradeep.jpg" alt=""></figure>
+                                        <p class="font_family_poppins lh_28 color_black mb_15 t1 height-test">Cloud technology consulting is a specialized field which requires a deep understanding of the cloud ecosystem and cutting edge technologies, such as network topology architecture, containerization and ease of cloud services. That is the reason why we chose a Aws premier consulting partner such as BluePi.</p>
+                                        <h3 class="d_block fs_22 lh_30 fw_sbold mb_5 ">Pradeep Ramakrishnan</h3>
+                                        <span class="designation font_family_poppins">CTO - KFC India</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-block-one text-test-align">
+                                <div class="testimonial-block-three wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                    <div class="inner-box p_relative d_block pt_40 pr_30 pb_40 pl_30 b_shadow_6 mb-30 test-height-1">
+                                        <figure class="thumb-box p_relative d_iblock w_80 h_80 b_radius_50 mb_15"><img src="assets/images/authors/vikalp_goibibo.png" alt=""></figure>
+                                        <p class="font_family_poppins lh_28 color_black mb_15 height-test">BluePi team worked with us on an ambitious and so-called Blitz-Migration project,of moving our web services to Amazon Public Cloud. The team was agile enough to not only learn our tech stack but also quickly got culturally aligned with our teams to work in an environment of high speed with the promise of reliability. BluePi teams tech-abilities and quick debugging skills were handy and ensured success to project.</p>
+                                        <h3 class="d_block fs_22 lh_30 fw_sbold mb_5">Vikalp Sahni</h3>
+                                        <span class="designation font_family_poppins">CTO at Goibibo.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-block-one text-test-align">
+                                <div class="testimonial-block-three wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                    <div class="inner-box p_relative d_block pt_40 pr_30 pb_40 pl_30 b_shadow_6 mb_30 test-height-1">
+                                        <figure class="thumb-box p_relative d_iblock w_80 h_80 b_radius_50 mb_15"><img src="assets/images/authors/kapil_delivery.png" alt=""></figure>
+                                        <p class="font_family_poppins lh_28 color_black mb_15 height-test">This project has been one of the most challenging and ambitious ones for Delhivery. Given the multifaceted challenges and complexity involved, BluePi team took up the task enthusiastically and executed it all through with same perseverance and rigor. Being given the kind of reassurance and ongoing support combined with its innovative and collaborative style adds further reason for us to appreciate them.</p>
+                                        <h3 class="d_block fs_22 lh_30 fw_sbold mb_5">Kapil Bharati</h3>
+                                        <span class="designation font_family_poppins">CTO, Co-Founder at Delhivery</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                       
+                    </div>
+                    
+                </div>
+                <div class="btn-box btn-mar">
+                    <a href="https://www.bluepiit.com/testimonial" class="theme-btn theme-btn-one btn-align-2 font-roboto">View all Testimonials<i class="icon-4"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-one -->
+
+        <!-- cta-one -->
+     <section class="cta-one p_relative pt_130 pb_140 centred mar-cta screen-cta">
+        <div class="bg-layer p_absolute l_0 parallax_none parallax-bg" data-parallax='{"y": 100}' style="background-color: #010a25;"></div>
+        <div class="shape">
+            <!-- <div class="shape-1 hero-shape-three p_absolute z_1"></div> -->
+            <div class="shape-2 p_absolute l_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-26.png);"></div>
+            <!-- <div class="shape-3 hero-shape-three p_absolute z_1"></div> -->
+            <div class="shape-4 p_absolute t_0 r_0 z_1" style="background-image: url(assets/images/shape/shape-16.png);"></div>
+        </div>
+            <div class="auto-container">
+            <div class="inner-container p_relative d_block cols-3-grid">
+                <div class="dtdc-box">
+                    <div class="dtdc-img-box"><img src="/assets/images/logos/dtdc-logo.jpeg" alt="" class="dtdc-size"></div>
+                    <div class="fs_17 mb_20 cta-font-1 bg-padding">
+                        <p class="txt-clr">Your Business.</p>
+                        <p class="txt-clr">Your Data.</p>
+                        <p class="txt-clr">Your Transformation.</p>
+                        <a href="https://www.bluepiit.com/contact-us" class="theme-btn theme-btn-one font-roboto btn-cta-2">Let us be a part of your journey<i class="icon-4"></i></a> 
+                    </div>           
+                </div>
+                <div class="pad-sec-text">
+                            <img src="/assets/images/icons/left-quotes-sign.png" alt="" class="quote-align">
+                            <div class="pic-center">
+                            <img src="/assets/images/authors/mrinal.png" alt="Mrinal Chakraborty" class="pic-size">
+                            </div>
+                            <div class="text-border">
+                            <p class="test-box">It was sheer pleasure working with BluePi. they have the necessary expertise to meet present day needs and eyes towards customer satisfaction and perfection.</p>
+                            <h2 class="test-head">Mrinal Chakraborty</h2>
+                            <p class="test-subhead">Executive Vice President - IT & Innovation at DTDC</p>
+                            <img src="/assets/images/icons/left-quotes-sign-1.png" alt="" class="quote-align-1">
+                            </div>
+                </div> 
+                <div class="img-test">
+                    <img src="/assets/images/dtdc-1.jpeg" alt="" class="img-rad">
+                    <div class="btn-test-align">
+                        <a href="#" class="btn-test">Download case study<img src="/assets/images/icons/download.png" alt="" class="btn-icon"> </a>
+                        </div>
+                </div>
+            </div>
+            </div>
+    </section>   
+
+     <!-- cta-one -->
+     <section class="cta-one p_relative pt_130 pb_140 centred mar-cta mobile-cta">
+        <div class="bg-layer p_absolute l_0 parallax_none parallax-bg" data-parallax='{"y": 100}' style="background-color: #010a25;"></div>
+        <div class="shape">
+            <!-- <div class="shape-1 hero-shape-three p_absolute z_1"></div> -->
+            <div class="shape-2 p_absolute l_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-26.png);"></div>
+            <!-- <div class="shape-3 hero-shape-three p_absolute z_1"></div> -->
+            <!-- <div class="shape-4 p_absolute t_0 r_0 z_1" style="background-image: url(assets/images/shape/shape-16.png);"></div> -->
+        </div>
+            <div class="auto-container">
+            <div class="inner-container p_relative d_block cols-3-grid-mob">
+                <div class="dtdc-box-mob">
+                    <div class="dtdc-img-box"><img src="/assets/images/logos/dtdc-logo.jpeg" alt="" class="dtdc-size-mob"></div>
+                    <div class="fs_17 mb_20 cta-font-1 bg-padding">
+                        <p class="txt-clr-mob">Your Business.</p>
+                        <p class="txt-clr-mob">Your Data.</p>
+                        <p class="txt-clr-mob">Your Transformation.</p>
+                        <a href="https://www.bluepiit.com/contact-us" class="theme-btn theme-btn-one font-roboto btn-cta-2-mob">Let us be a part of your journey<i class="icon-4"></i></a> 
+                    </div>           
+                </div>
+                <div class="pad-sec-text-mob">
+                            <img src="/assets/images/icons/left-quotes-sign.png" alt="" class="quote-align">
+                            <div class="pic-center">
+                            <img src="/assets/images/authors/mrinal.png" alt="Mrinal Chakraborty" class="pic-size">
+                            </div>
+                            <div class="text-border">
+                            <p class="test-box-mob">It was sheer pleasure working with BluePi. they have the necessary expertise to meet present day needs and eyes towards customer satisfaction and perfection.</p>
+                            <h2 class="test-head">Mrinal Chakraborty</h2>
+                            <p class="test-subhead">Executive Vice President - IT & Innovation at DTDC</p>
+                            <img src="/assets/images/icons/left-quotes-sign-1.png" alt="" class="quote-align-1">
+                            </div>
+                </div> 
+                <div class="img-test-mob">
+                    <img src="/assets/images/dtdc-1.jpeg" alt="" class="img-rad">
+                    <div class="btn-test-align">
+                        <a href="#" class="btn-test">Download case study<img src="/assets/images/icons/download.png" alt="" class="btn-icon"> </a>
+                        </div>
+                </div>
+            </div>
+            </div>
+    </section>  
+
+     <!-- our happy customers
+    ============================================= -->
+
+     <!-- our valuable customers-2 -->
+
+     <section class="customer-2-section">
+        <div class="site-heading text-center custmr-head">
+            <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr font-lato">Our valuable customers</h2>
+        </div>
+
+            <div class="marquee-wrapper-2">
+                <div class="container grey-scale">
+                    <div class="marquee-block-2">
+                        <div class="marquee-inner-2 to-right-1">
+                            <span>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/dhfl.png" alt="DHFL-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/dmi.png" alt="DMI-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/fidelity.png" alt="fidelity-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/fusion.png" alt="fusion-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/idfc.png" alt="idfc-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/abp.png" alt="abp-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/campass.png" alt="compass-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/delhivery.png" alt="delhivery-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/dtdc.png" alt="DTDC-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/fabindia.png" alt="fabindia-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/jubilant.png" alt="jubilant-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/makemy.png" alt="makemytrip-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/qmetrix.png" alt="qmetrix-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/quikr.png" alt="quikr-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/safexpress.png" alt="safexpress-logo" class="logo-width-size">
+                                </div>
+                            </span>
+                            <span>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/dhfl.png" alt="DHFL-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/dmi.png" alt="DMI-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/fidelity.png" alt="fidelity-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/fusion.png" alt="fusion-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/idfc.png" alt="idfc-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/abp.png" alt="abp-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/campass.png" alt="compass-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/delhivery.png" alt="delhivery-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/dtdc.png" alt="DTDC-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/fabindia.png" alt="fabindia-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/jubilant.png" alt="jubilant-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/makemy.png" alt="makemytrip-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/qmetrix.png" alt="qmetrix-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/quikr.png" alt="quikr-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/safexpress.png" alt="safexpress-logo" class="logo-width-size">
+                                </div>
+                            
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="marquee-block-3">
+                        <div class="marquee-inner-2 to-right-1">
+                            <span>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/innovaccer.png" alt="innovaccer-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/innoviti.png" alt="innoviti-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/maxlife.png" alt="maxlife-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/pincap.png" alt="pincap-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/pinelabs.png" alt="pinelabs-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/ferns.png" alt="ferns n petals-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/goibibo.png" alt="goibibo-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/groffers.png" alt="groffers-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/havells.png" alt="havells-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/hindustan.png" alt="hindustantimes-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/shahi.png" alt="shahi-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/spencers.png" alt="spencers-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/unilever.png" alt="unilever-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/xerox.png" alt="xerox-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/zee.png" alt="zee-logo" class="logo-width-size">
+                                </div>
+                            </span>
+                            <span>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/innovaccer.png" alt="innovaccer-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/innoviti.png" alt="innoviti-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/maxlife.png" alt="maxlife-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/pincap.png" alt="pincap-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/pinelabs.png" alt="pinelabs-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/ferns.png" alt="ferns n petals-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/goibibo.png" alt="goibibo-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/groffers.png" alt="groffers-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/havells.png" alt="havells-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/hindustan.png" alt="hindustantimes-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/shahi.png" alt="shahi-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/spencers.png" alt="spencers-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/unilever.png" alt="unilever-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/xerox.png" alt="xerox-logo" class="logo-width-size">
+                                </div>
+                                <div class="marquee-item-2">
+                                    <img src="assets/images/customers-logos/zee.png" alt="zee-logo" class="logo-width-size">
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        </div>      
+    </section>
+
+    <!-- video-cta -->
+
+    <section class="fnp-section screen-cta" style="background-color: #010a25;">
+        <div class="auto-container">
+            <div class="cols-2-fnp">
+                <div class="fnp-logo">
+                    <img src="/assets/images/logos/fnp-logo-white.png" alt="" class="fnp-logo-size">
+                </div>
+                <div class="fnp-text">
+                    <p class="fnp-txt">We are keen to replicate Ferns N Petals' success story for your business.</p>
+                    <div class="fnp-btn">
+                        <a href="https://www.bluepiit.com/contact-us" class="theme-btn theme-btn-one font-roboto fnp-btn-size">Let us be a part of your journey<i class="icon-4"></i></a>
+                        <a href="#" class="fnp-case-btn">Download case study &nbsp; <img src="/assets/images/icons/download-logo-white.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-test">
+                <div class="test-def"><p class="test-txt">Watch our testimonial videos</p></div>
+                <div class="cols-3-fnp">
+                    <div><iframe width="375" height="200" src="https://www.youtube.com/embed/0FPGXsnJ47s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div><iframe width="375" height="200" src="https://www.youtube.com/embed/xiZwekZj5XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div><iframe width="375" height="200" src="https://www.youtube.com/embed/csE18YcyLMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fnp-section mobile-cta" style="background-color: #010a25; height: 100%; padding-top: 4%; padding-bottom: 4%; text-align: center;">
+        <div class="auto-container">
+            <div class="">
+                <div class="fnp-logo">
+                    <img src="/assets/images/logos/fnp-logo-white.png" alt="" class="fnp-logo-size">
+                </div>
+                <div class="fnp-text">
+                    <p class="fnp-txt-mob">We are keen to replicate Ferns N Petals' success story for your business.</p>
+                    <div class="fnp-btn-mob">
+                        <a href="https://www.bluepiit.com/contact-us" class="theme-btn theme-btn-one font-roboto fnp-btn-size-mob">Let us be a part of your journey<i class="icon-4"></i></a>
+                        <a href="#" class="fnp-case-btn">Download case study &nbsp; <img src="/assets/images/icons/download-logo-white.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-test">
+                <div class="test-def"><p class="test-txt">Watch our testimonial videos</p></div>
+                <div class="cols-3-fnp-mob">
+                    <div><iframe width="300" height="150" src="https://www.youtube.com/embed/0FPGXsnJ47s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div><iframe width="300" height="150" src="https://www.youtube.com/embed/xiZwekZj5XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div><iframe width="300" height="150" src="https://www.youtube.com/embed/csE18YcyLMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <!-- video-one -->
+
+         <!-- Our ecosystem partners
+    ============================================= -->
+    <section class="ecosystem-section blue-bg">
+        <div class="site-heading text-center eco-head">
+            <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr font-lato">Our Partner Ecosystem</h2>
+        </div>
+
+            <div class="marquee-wrapper">
+                <div class="container grey-scale">
+                    <div class="marquee-block-1">
+                        <div class="marquee-inner to-right-1">
+                            <span>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/snowflake.png" alt="snowflake-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/google-cloud.png" alt="gcp-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/aws .png" alt="aws-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/cloudera.png" alt="cloudera-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/data-bricks.png" alt="databrick-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/vmware.png" alt="vmware-logo" class="brand-size-1 eco-padding">
+                                </div>
+                            </span>
+                            <span>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/snowflake.png" alt="snowflake-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/google-cloud.png" alt="gcp-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/aws .png" alt="aws-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/cloudera.png" alt="cloudera-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/data-bricks.png" alt="databrick-logo" class="brand-size-1 eco-padding">
+                                </div>
+                                <div class="marquee-item">
+                                    <img src="assets/images/eco-logo-2/vmware.png" alt="vmware-logo" class="brand-size-1 eco-padding">
+                                </div>
+                            
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        </div>      
+    </section>
+
+        <!-- end -->
+    
+    <!-- cta-one end -->
+
+        <!-- clients-one -->
+        <!-- <section class="clients-one p_relative">
+            <div class="auto-container">
+                <div class="inner-container p_relative">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <div class="line line-2 p_absolute"></div>
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="five-item-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-1.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-1.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-2.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-2.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-3.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-3.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-4.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-4.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-5.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-5.png" alt=""></a></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- clients-one end -->
+    
+        <!-- news-one -->
+        <section class="news-one p_relative mar-pointer screen-case">
+            <div class="auto-container">
+                <div class="inner-container p_relative sec-pad">
+                    <div class="sec-title p_relative d_block mb_60 text-center z_1">
+                        <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr font-lato">Case Studies</h2>
+                        <p class="fs_18 font-roboto">Explore how we fulfill our customer's needs and assist them with achieving their objectives</p>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/case-studies/startup-business-young-man-group-meeting-brainstorming-office-workplace.jpg" alt="" class="img-size"></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">Retail</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        
+                                        <h4 class="d_block fs_20 lh_30 mb_15 case-head font-roboto"><a href="https://www.bluepiit.com/case-study/multinational-QSR-company">BluePi helps a multinational QSR company in to improve operational efficiency & productivity</a></h4>
+                                        <!-- <p class="d_block mb_20 case-dis font-roboto">Industry QSR Challenges Build a Data warehouse to support the data needs for their CRM and other marketing tools and functions Solution...</p> -->
+                                        <div class="btn-box">
+                                            <a href="https://www.bluepiit.com/case-study/multinational-QSR-company" class="theme-btn theme-btn-one font-roboto read-btn">Read More<i class="icon-4"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/case-studies/business-presentation-laptop-screen.jpg" alt="" class="img-size"></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">BFSI</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                       
+                                        <h4 class="d_block fs_20 lh_30 mb_15 case-head font-roboto"><a href="https://www.bluepiit.com/case-study/private-sector-bank">BluePi helps a private sector bank in Cloud-based data lake, in-depth reporting & analytics insight</a></h4>
+                                        <!-- <p class="d_block mb_20 case-dis font-roboto">Customer AD Company Location India Segment Media Solution Migration Customer Profile The client is a subsidiary of a major Media Group that was established in 2006...</p> -->
+                                        <!-- <div class="btn-box">
+                                            <a href="index.html" class="theme-btn theme-btn-one font-roboto">Read More<i class="icon-4"></i></a>
+                                        </div> -->
+                                        <div class="btn-box">
+                                            <a href="https://www.bluepiit.com/case-study/private-sector-bank" class="theme-btn theme-btn-one font-roboto read-btn">Read More<i class="icon-4"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/case-studies/ftl-services.jpg" alt="" class="img-size"></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">Logistics</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        
+                                        <h4 class="d_block fs_20 lh_30 mb_15 case-head font-roboto"><a href="https://www.bluepiit.com/case-study/big-data-and-realtime-reporting">How BluePi Helped Delhivery with Big Data and Real Time Reporting</a></h4>
+                                        <!-- <p class="d_block mb_20 case-dis font-roboto">Customer Delhivery Location India Segment Logistics Solution Data Warehousing and Analytics solutions Customer Profile Delhivery...</p> -->
+                                        <div class="btn-box">
+                                            <a href="https://www.bluepiit.com/case-study/big-data-and-realtime-reporting" class="theme-btn theme-btn-one font-roboto read-btn">Read More<i class="icon-4"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box btn-mar-2">
+                        <a href="https://www.bluepiit.com/case-study" class="theme-btn theme-btn-one btn-align-1 font-roboto">All Case Studies<i class="icon-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news-one end -->
+
+        <!-- news-one -->
+        <section class="news-one p_relative mar-pointer-mob mobile-case">
+            <div class="auto-container">
+                <div class="inner-container p_relative sec-pad">
+                    <div class="sec-title p_relative d_block mb_60 text-center z_1">
+                        <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr font-lato">Case Studies</h2>
+                        <p class="fs_18 font-roboto">Explore how we fulfill our customer's needs and assist them with achieving their objectives</p>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/case-studies/startup-business-young-man-group-meeting-brainstorming-office-workplace.jpg" alt="" class="img-size"></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">Retail</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <!-- <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">Retail</h6> -->
+                                        </div>
+                                        <h4 class="d_block fs_20 lh_30 mb_15 font-roboto"><a href="https://www.bluepiit.com/case-study/multinational-QSR-company">BluePi helps a multinational QSR company in to improve operational efficiency & productivity</a></h4>
+                                        <!-- <p class="d_block mb_20 case-dis font-roboto">Industry QSR Challenges Build a Data warehouse to support the data needs for their CRM and other marketing tools and functions Solution...</p> -->
+                                        <div class="btn-box">
+                                            <a href="https://www.bluepiit.com/case-study/multinational-QSR-company" class="theme-btn theme-btn-one font-roboto read-btn">Read More<i class="icon-4"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/case-studies/business-presentation-laptop-screen.jpg" alt="" class="img-size"></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">BFSI</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <!-- <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">BFSI</h6> -->
+                                        </div>
+                                        <h4 class="d_block fs_20 lh_30 mb_15 font-roboto"><a href="https://www.bluepiit.com/case-study/private-sector-bank">BluePi helps a private sector bank in Cloud-based data lake, in-depth reporting & analytics insight</a></h4>
+                                        <!-- <p class="d_block mb_20 case-dis font-roboto">Customer AD Company Location India Segment Media Solution Migration Customer Profile The client is a subsidiary of a major Media Group that was established in 2006...</p> -->
+                                        <!-- <div class="btn-box">
+                                            <a href="index.html" class="theme-btn theme-btn-one font-roboto">Read More<i class="icon-4"></i></a>
+                                        </div> -->
+                                        <div class="btn-box">
+                                            <a href="https://www.bluepiit.com/case-study/private-sector-bank" class="theme-btn theme-btn-one font-roboto read-btn">Read More<i class="icon-4"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/case-studies/ftl-services.jpg" alt="" class="img-size"></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">Logistics</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <!-- <h6 class="p_relative d_iblock fs_15 fw_medium g_color font-roboto">Logistics</h6> -->
+                                        </div>
+                                        <h4 class="d_block fs_20 lh_30 mb_15 font-roboto"><a href="https://www.bluepiit.com/case-study/big-data-and-realtime-reporting">How BluePi Helped Delhivery with Big Data and Real Time Reporting</a></h4>
+                                        <!-- <p class="d_block mb_20 case-dis font-roboto">Customer Delhivery Location India Segment Logistics Solution Data Warehousing and Analytics solutions Customer Profile Delhivery...</p> -->
+                                        <div class="btn-box">
+                                            <a href="https://www.bluepiit.com/case-study/big-data-and-realtime-reporting" class="theme-btn theme-btn-one font-roboto read-btn">Read More<i class="icon-4"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="https://www.bluepiit.com/case-study" class="theme-btn theme-btn-one btn-align-2 font-roboto">All Case Studies<i class="icon-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news-one end -->
+
+         <!-- service-one -->
+         <section class="service-one p_relative sec-pad screen-career">
+            <div class="pattern-layer">
+                <div class="pattern-1 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-9.png);"></div>
+                <div class="pattern-2 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-10.png);"></div>
+                <div class="pattern-3 p_absolute b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-11.png);"></div>
+                <div class="pattern-4 p_absolute b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-12.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="sec-title p_relative d_block mb_50 text-center space-red">
+                    <!-- <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19 font-lato bottom-mar">Carrer at BluePi</span> -->
+                    <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr">Be a BluePi'an</h2>
+                    <!-- <p class="d_block fs_18">Amet consectur adipiscing elit sed eiusmod ex tempor incididunt <br />labore dolore magna aliquaenim ad minim veniam.</p> -->
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-11"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-2.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/technical-architect-backend/">Technical Architect | Backend</a></h4>
+                                
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Dec 02, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+                               
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Delivery high quality solutions and push the team to improve the quality standards.</p>
+                                <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/technical-architect-backend/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-12"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-3.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/big-data-architect/">Big Data Architect</a></h4>
+
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Nov 20, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Solve complex business problems involving Tera Bytes of data.</p>
+                                <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/big-data-architect/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-13"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-4.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/technical-architect-application/">Technical Architect | Applications</a></h4>
+
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Apr 30, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Design and develop large scale micro services architecture, reusable frameworks.</p>
+                               <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/technical-architect-application/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-14"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-5.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/module-lead-machine-learning/">Module Lead | Machine Learning</a></h4>
+
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Apr 30, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Develop models, algorithms and prototypes for real life business problems for customers.</p>
+                                <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/module-lead-machine-learning/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box btn-mar-1">
+                    <a href="https://www.bluepiit.com/career" class="theme-btn theme-btn-one btn-align-1 font-roboto">View all Openings<i class="icon-4"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- service-one end -->
+
+         <!-- service-one -->
+         <section class="service-one p_relative sec-pad mobile-career">
+            <div class="pattern-layer">
+                <div class="pattern-1 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-9.png);"></div>
+                <div class="pattern-2 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-10.png);"></div>
+                <div class="pattern-3 p_absolute b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-11.png);"></div>
+                <div class="pattern-4 p_absolute b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-12.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="sec-title p_relative d_block mb_50 text-center">
+                    <!-- <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19 font-lato bottom-mar">Carrer at BluePi</span> -->
+                    <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr">Be a BluePi'an</h2>
+                    <!-- <p class="d_block fs_18">Amet consectur adipiscing elit sed eiusmod ex tempor incididunt <br />labore dolore magna aliquaenim ad minim veniam.</p> -->
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-11"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-2.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/technical-architect-backend/">Technical Architect | Backend</a></h4>
+                                
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Dec 02, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+                               
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Delivery high quality solutions and push the team to improve the quality standards.</p>
+                                <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/technical-architect-backend/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-12"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-3.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/big-data-architect/">Big Data Architect</a></h4>
+
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Nov 20, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Solve complex business problems involving Tera Bytes of data.</p>
+                                <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/big-data-architect/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-13"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-4.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/technical-architect-application/">Technical Architect | Applications</a></h4>
+
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Apr 30, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Design and develop large scale micro services architecture, reusable frameworks.</p>
+                               <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/technical-architect-application/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-14"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-5.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20 career-head font-roboto"><a href="https://www.bluepiit.com/career/module-lead-machine-learning/">Module Lead | Machine Learning</a></h4>
+
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Apr 30, 2022</h6> <br>
+                                <h6 class="p_relative d_iblock fs_15 fw_medium info-clr">Gurugram, Haryana, India</h6>
+
+                                <p class="p_relative d_block mb_20 career-dis font-roboto">Develop models, algorithms and prototypes for real life business problems for customers.</p>
+                                <div class="btn-box">
+                                    <a href="https://www.bluepiit.com/career/module-lead-machine-learning/" class="theme-btn theme-btn-one font-roboto apply-btn">Apply Now<i class="icon-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <a href="https://www.bluepiit.com/career" class="theme-btn theme-btn-one btn-align-2 font-roboto">View all Openings<i class="icon-4"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- service-one end -->
+
+        <!-- funfact-one -->
+        <!-- <section class="funfact-one pt_90 pb_80 text-center p_relative">
+            <div class="shape parallax-scene parallax-scene-5">
+                <div data-depth="0.50" class="shape-1 p_absolute" style="background-image: url(assets/images/shape/shape-21.png);"></div>
+                <div data-depth="0.30" class="shape-2 p_absolute" style="background-image: url(assets/images/shape/shape-22.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="90">0</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Successful projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="2.6">0</span><span>M</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Satisfied Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="35">0</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Experienced Staff</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="10">0</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Awards Win</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- funfact-one end -->
+
+
+       
+
+
+        <!-- cta-one -->
+        <!-- <section class="cta-one p_relative pt_130 pb_140 centred">
+            <div class="bg-layer p_absolute l_0 parallax_none parallax-bg" data-parallax='{"y": 100}' style="background-image: url(assets/images/background/cta-bg.jpg);"></div>
+            <div class="shape">
+                <div class="shape-1 hero-shape-three p_absolute z_1"></div>
+                <div class="shape-2 p_absolute l_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-26.png);"></div>
+                <div class="shape-3 hero-shape-three p_absolute z_1"></div>
+                <div class="shape-4 p_absolute t_0 r_0 z_1" style="background-image: url(assets/images/shape/shape-16.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="inner-box p_relative z_1">
+                    <h2 class="d_block fs_40 fw_bold mb_20">Need Help Finding The Best Solution To Operate Your Business?</h2>
+                    <p class="fs_17 mb_35">We help our clients succeed by creating brand identities, digital <br />experiences, and print materials that communicate clearly.</p>
+                    <a href="index.html" class="theme-btn theme-btn-two wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms"><span data-text="Get Started">Get Started</span></a>
+                </div>
+            </div>
+        </section> -->
+        <!-- cta-one end -->
+
+         <!-- Awards-one -->
+         <section class="testimonial-one p_relative">
+            <div class="auto-container">
+                <div class="inner-container p_relative pt_150 pb_140">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <!-- <div class="line line-2 p_absolute"></div> -->
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="sec-title p_relative d_block mb_60 text-center z_1 top-height">
+                        <!-- <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19 font-roboto bottom-mar">achievements</span> -->
+                        <h2 class="p_relative d_block fs_40 fw_bold mb_30 heading-clr font-lato">Awards and Accolades</h2>
+                        <!-- <p>Amet consectur adipiscing elit sed eiusmod ex tempor incididunt <br />labore dolore aliquaenim minim veniam.</p> -->
+                    </div>
+                    <div class="three-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one awards-margin">
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="award-size">
+                                    <img src="/assets/images/awards/001.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="award-size">
+                                    <img src="/assets/images/awards/002.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="award-size">
+                                    <img src="/assets/images/awards/003.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="award-size">
+                                    <img src="/assets/images/awards/004.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="award-size">
+                                    <img src="/assets/images/awards/005.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Awards-one -->
+        
+
+        <!-- footer-one -->
+        <footer class="footer-one">
+            <div class="pattern-layer">
+                <div class="pattern-1 hero-shape-three"></div>
+                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-28.png);"></div>
+                <div class="pattern-3 hero-shape-three"></div>
+                <div class="pattern-4" style="background-image: url(assets/images/shape/shape-30.png);"></div>
+            </div>
+            <div class="footer-top">
+                <div class="auto-container">
+                    <div class="top-inner clearfix">
+                        <figure class="footer-logo pull-left">
+                            <a href="index.html"><img src="assets/images/logos/logo-invert.png" alt=""></a>
+                        </figure>
+                        <ul class="social-links pull-right clearfix"> 
+                            <li><a href="https://www.facebook.com/Bluepiit/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/bluepi_in"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC_p2inFvXophXIn2DXerJwQ/featured"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://in.linkedin.com/company/bluepi"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-widget-section">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget about-widget wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div>
+                                    <h4 class="font-foot-1">Join our Newsletter for latest News.</h4>
+                                </div>
+                               
+                                <div class="subscribe-inner">
+                                    <form action="contact.html" method="post" class="subscribe-form font-roboto">
+                                        <div class="form-group">
+                                            <input type="email" name="email" placeholder="Your email address" readonly="">
+                                            <button type="submit"><i class="icon-4"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ml_80 wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                <div>
+                                    <h4 class="font-foot">Solutions</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="https://www.bluepiit.com/industries/retail/supply-chain-optimization/">Supply Chain Optimization</a></li>
+                                        <li><a href="https://www.bluepiit.com/industries/bfsi">BFSI</a></li>
+                                        <li><a href="https://www.bluepiit.com/big-data/">Big Data</a></li>
+                                        <li><a href="https://www.bluepiit.com/data-science/">Data Science</a></li>
+                                        <li><a href="https://www.bluepiit.com/migration/">Cloud Migration</a></li>
+                                        <li><a href="https://www.bluepiit.com/devops/">DevOps</a></li>
+                                        <li><a href="https://www.bluepiit.com/consulting/">Cloud Consulting</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <div>
+                                    <h4 class="font-foot">Resources</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="https://www.bluepiit.com/case-study/">Case study</a></li>
+                                        <li><a href="https://www.bluepiit.com/media-coverage/">Media Coverage</a></li>
+                                        <li><a href="https://www.bluepiit.com/career">Join Us</a></li>
+                                        <li><a href="https://www.bluepiit.com/team/">Team</a></li>
+                                        <li><a href="https://www.bluepiit.com/blog/">Blog</a></li>
+                                        <li><a href="https://www.bluepiit.com/retail-wiki/">Retail Wiki</a></li>
+                                        <li><a href="https://www.bluepiit.com/whitepaper/">Whitepapers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <div>
+                                    <h4 class="font-foot">Company</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="https://www.bluepiit.com/career/">Join Us</a></li>
+                                        <li><a href="https://www.bluepiit.com/why-bluepi/">Why join BluePi</a></li>
+                                        <li><a href="https://www.bluepiit.com/values/">Core Values</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget contact-widget wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div>
+                                    <h4 class="font-foot">Contacts</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="https://www.bluepiit.com/contact-us">Contact-us </a></li>
+                                        <li><a href="https://www.bluepiit.com/contact-us">India - +91 9319 029 977 | enquiry@bluepi.in</a></li>
+                                        <li><a href="https://www.bluepiit.com/contact-us"> Australia - +61 492 991 894 | enquiry@bluepi.com.au</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="bottom-inner clearfix">
+                        <div class="copyright pull-left">
+                            <p class="font-roboto"><a href="index.html">BluePi</a> &copy; 2020 All Right Reserved</p>
+                        </div>
+                        <ul class="footer-nav clearfix pull-right">
+                            <li class="font-roboto"><a href="index.html">BluePi Consulting</a></li>
+                            <li class="font-roboto"><a href="index.html">Terms of Service</a></li>
+                            <li class="font-roboto"><a href="index.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-one end -->
+
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+            <div>
+                <div class="scroll-top-inner">
+                    
+                    <div class="scroll-bar-text g_color">
+                        <img src="/assets/images/icons/back-button.png" alt="" class="arrow-margin">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to top end -->
+
+
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/jquery.countTo.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+
+    <!-- main-js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- customer-2 -->
+        
+        <!--  -->
+
+    <script>
+                      
+        $('.slider').each(function() {
+          var $this = $(this);
+          var $group = $this.find('.slide_group');
+          var $slides = $this.find('.slide');
+          var bulletArray = [];
+          var currentIndex = 0;
+          var timeout;
+
+          function move(newIndex) {
+            var animateLeft, slideLeft;
+
+            advance();
+
+            if ($group.is(':animated') || currentIndex === newIndex) {
+              return;
+            }
+
+            bulletArray[currentIndex].removeClass('active');
+            bulletArray[newIndex].addClass('active');
+
+            if (newIndex > currentIndex) {
+              slideLeft = '100%';
+              animateLeft = '-100%';
+            } else {
+              slideLeft = '-100%';
+              animateLeft = '100%';
+            }
+
+            $slides.eq(newIndex).css({
+              display: 'block',
+              left: slideLeft
+            });
+            $group.animate({
+              left: animateLeft
+            }, function() {
+              $slides.eq(currentIndex).css({
+                display: 'none'
+              });
+              $slides.eq(newIndex).css({
+                left: 0
+              });
+              $group.css({
+                left: 0
+              });
+              currentIndex = newIndex;
+            });
+          }
+
+          function advance() {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+              if (currentIndex < ($slides.length - 1)) {
+                move(currentIndex + 1);
+              } else {
+                move(0);
+              }
+            }, 4000);
+          }
+
+          $('.next_btn').on('click', function() {
+            if (currentIndex < ($slides.length - 1)) {
+              move(currentIndex + 1);
+            } else {
+              move(0);
+            }
+          });
+
+          $('.previous_btn').on('click', function() {
+            if (currentIndex !== 0) {
+              move(currentIndex - 1);
+            } else {
+              move(3);
+            }
+          });
+
+          $.each($slides, function(index) {
+            var $button = $('<a class="slide_btn">&bull;</a>');
+
+            if (index === currentIndex) {
+              $button.addClass('active');
+            }
+            $button.on('click', function() {
+              move(index);
+            }).appendTo('.slide_buttons');
+            bulletArray.push($button);
+          });
+
+          advance();
+        });
+</script>
+
+</body><!-- End of .page_wrapper -->
+</html>
